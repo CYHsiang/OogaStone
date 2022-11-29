@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    background: #FDF1E8;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* ------------------header----------------- */
+.header {
+    z-index: 9999;
+    position: relative;
+    width: 95%;
+    background-color: #FDF1E8;
+    display: flex;
+    padding: 0 70px;
+    position: fixed;
+    top: 0;
+}
+
+.logo-small {
+    padding: 15px 10px 0 0;
+}
+
+/* .navLeft{
+    height: 60px;
+    border: 1px solid red;
+    overflow: hidden;
+    width: 480px;
+    margin: 0 auto;
+} */
+/* .navLeft ul {
+    margin: 0;
+    padding: 0;
+} */
+
+.navLeft li {
+    float: left;
+    list-style: none;
+}
+
+.navLeft a {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    /* height: 40px; */
+    text-align: center;
+}
+
+.navLeft ul ul {
+    background-color: #FDF1E8;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 10px 13px -7px #959595;
+}
+
+/* .navLeft li li:hover {
+    background-color:#979E8A;
+} */
+
+.navLeft li li {
+    clear: left;
+}
+
+.navLeft a {
+    color: #21402F;
+    text-decoration: none;
+    line-height: 60px;
+    /* margin: 0 10px; */
+}
+
+.navLeft li:hover ul {
+    display: block;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.nav-right img {
+    margin-top: 15px;
+    margin-right: 30px;
+}
+/* ------------------content---------------- */
+.container {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.content {
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    margin: 188px auto;
+}
+
+.content .text {
+    width: 330px;
+    height: 470px;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.text img {
+    display: block;
+    margin: auto;
+}
+
+.text h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 48px;
+    color: #21402F;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #979E8A;
+    text-align: center;
+}
+
+.text .btnShop {
+    width: 200px;
+    height: 50px;
+    border: solid 1px #21402F;
+    margin-left: 70px;
+    font-size: 20px;
+    color: #FDF1E8;
+    background-color: #21402F;
+    margin-top: 70px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* ------------------footer----------------- */
+
+.footer {
+    display: flex;
+    background-color: #979E8A;
+    padding: 0 70px;
+}
+
+.footer-logo {
+    padding: 15px 0;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.footer-right ul {
+    color: #FDF1E8;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-right img {
+    margin-left: 30px;
+}

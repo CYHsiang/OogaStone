@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooga Stone</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/SizePage.css">
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="./js/Size.js">
+</head>
+<script>
+    $(function () {
+        var fixedTop = $('#fixedTop');
+        // 當超連結的按鈕被左鍵一下時
+        fixedTop.on('click', function () {
+            // 捲動到最上面的位置（scrollTop:0）
+            $('html,body').animate({ scrollTop: '0' }, 500);
+        });
+
+        // 產生按鈕的時機（截入、捲動、視窗大小）
+        $(window).on('load scroll resize', function () {
+            // 檢查目前捲軸捲動的高度值有沒有超100，如果有，就出現TOP按鈕
+            // 捲軸捲動的高度值預設為100
+            var showTop = 100;
+            if ($(window).scrollTop() > showTop) {
+                // 淡入
+                fixedTop.fadeIn('normal');
+            } else {
+                // 淡出
+                fixedTop.fadeOut('normal');
+            }
+        });
+    });
+</script>
+
+
+
+<body>
+    <!--------------------header------------------>
+    <div class="header">
+        <div class="logo-small">
+            <a href="./index.html"><img src="./images/Header_smallgreen.svg" alt="Ooga Stone"></a>
+        </div>
+        <nav class="navLeft">
+            <ul>
+                <li><a href="./ProductPage-1.html">所有商品</a>
+                    <ul>
+                        <li><a href="#">耳環</a></li>
+                        <li><a href="#">戒指</a></li>
+                        <li><a href="#">項鍊</a></li>
+                        <li><a href="#">手鍊</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">活動消息</a>
+                    <ul>
+                        <li onclick="OpenModal()"><a href="#">折價券</a></li>
+                        <li><a href="#">限時折扣</a></li>
+                    </ul>
+                </li>
+                <li><a href="./IntroductionPage.html">水晶推薦</a>
+                    <ul>
+                        <li><a href="#">MBTI</a></li>
+                        <li><a href="#">星座</a></li>
+                        <li><a href="#">水晶</a></li>
+                    </ul>
+                </li>
+                <li><a href="./CustomPage.html">客製化</a></li>
+                <li><a href="./SizePage.html">尺寸測量</a></li>
+                <li><a href="./StoryPage.html">關於我們</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-right">
+            <a href="#"><img src="./images/Header_searchicon.svg" alt="search"></a>
+            <a href="./MemberPage.html"><img src="./images/Header_membericon.svg" alt="member"></a>
+            <a href="./ShoppingCartPage.html"><img src="./images/Header_carticon.svg" alt="cart"></a>
+        </nav>
+    </div>
+    <!--------------------content------------------>
+    <div class="container">
+        <div class="title">
+            <p>尺寸測量方式</p>
+            <ul>
+                <li><a href="#earrings" class="btn btn-info">耳環</a></li>
+                <li><a href="#ring" class="btn btn-info">戒指</a></li>
+                <li><a href="#necklace" class="btn btn-info">項鍊</a></li>
+                <li><a href="#bracelet" class="btn btn-info">手鍊</a></li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="img full-page" id="earrings">
+                <img src="./images/Size_耳環.png" alt="">
+            </div>
+            <div class="img full-page" id="ring">
+                <img src="./images/Size_戒指.png" alt="">
+            </div>
+            <div class="img full-page" id="necklace">
+                <img src="./images//Size_項鍊.png" alt="">
+            </div>
+            <div class="img full-page" id="bracelet">
+                <img src="./images/Size_手鍊.png" alt="">
+            </div>
+        </div>
+        <a href="#" id="fixedTop"><img src="./images/Size_topIcon.svg" alt=""></a>
+
+    </div>
+    </div>
+    <!--------------------footer------------------>
+    <div class="footer">
+        <div class="footer-logo">
+            <a href="#"></a><img src="./images/Footer_logo.svg" alt="">
+        </div>
+        <nav class="footer-right">
+            <ul>
+                <li>關注我們</li>
+                <li><a href="#"><img src="./images/Footer_facebook.svg" alt="search"></a></li>
+                <li><a href="#"><img src="./images/Footer_ig.svg" alt="member"></a></li>
+                <li><a href="#"><img src="./images/Footer_shopee.svg" alt="cart"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>

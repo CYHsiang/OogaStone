@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大鏡功能</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #small_Box {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #small_Box img {
+            width: 100%;
+            height: 100%;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <script>
+        window.onload = function () {
+            var span = document.createElement("span");
+            var box = document.getElementById("small_Box");
+            var img = document.createElement("img");
+            var boxWidth = box.clientWidth;
+            var boxHeight = box.clientHeight;
+            var scale = 2;
+            span.style.position = "absolute";
+            span.style.width = boxWidth / scale + "px";
+            span.style.height = boxHeight / scale + "px";
+            span.style.display = 'none';
+            span.style.overflow = 'hidden';
+            // span.style.border = "1px solid #ccc";
+            span.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+            // span.style.cursor = 'pointer';
+            box.appendChild(span);
+            img.setAttribute("src", "./images/581product.svg");
+            img.style.width = scale * boxWidth + "px";
+            img.style.height = scale * boxHeight + "px";
+            box.onmouseover = function (e) {
+                span.style.display = "block";
+            }
+            box.onmousemove = function (e) {
+                e = e || window.event;
+                var x = e.clientX - span.clientWidth / scale - this.offsetLeft;
+                var y = e.clientY - span.clientHeight / scale - this.offsetTop;
+                if (x <= 0) {
+                    x = 0
+                }
+                if (x >= box.clientWidth - span.clientWidth) {
+                    x = box.clientWidth - span.clientWidth
+                }
+                if (y <= 0) {
+                    y = 0
+                }
+                if (y >= box.clientHeight - span.clientHeight) {
+                    y = box.clientHeight - span.clientHeight
+                }
+                span.style.left = x + "px";
+                span.style.top = y + "px";
+
+                img.style.marginLeft = -1 * span.offsetLeft * scale - x + "px";
+                img.style.marginTop = -1 * span.offsetTop * scale - y + "px";
+                span.appendChild(img);
+            }
+
+            box.onmouseout = function (e) {
+                span.style.display = "none";
+            }
+        }
+    </script>
+    <div id="small_Box"><img src="./images/581product.svg"></div>
+</body>
+
+</html>

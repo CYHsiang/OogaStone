@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooga Stone</title>
+    <link rel="shortcut icon" href="./images/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/IntroductionPage.css">
+    <script src="./jq.js/jquery-3.6.0.js"></script>
+    <script src="./js/Introduction.js"></script>
+</head>
+
+<body>
+    <!--------------------header------------------>
+    <div class="header">
+        <div class="logo-small">
+            <a href="./index.html"><img src="./images/Header_smallgreen.svg" alt="Ooga Stone"></a>
+        </div>
+        <nav class="navLeft">
+            <ul>
+                <li><a href="./ProductPage-1.html">所有商品</a>
+                    <ul>
+                        <li><a href="#">耳環</a></li>
+                        <li><a href="#">戒指</a></li>
+                        <li><a href="#">項鍊</a></li>
+                        <li><a href="#">手鍊</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">活動消息</a>
+                    <ul>
+                        <li onclick="OpenModal()"><a href="#">折價券</a></li>
+                        <li><a href="#">限時折扣</a></li>
+                    </ul>
+                </li>
+                <li><a href="./IntroductionPage.html">水晶推薦</a>
+                    <ul>
+                        <li><a href="#">MBTI</a></li>
+                        <li><a href="#">星座</a></li>
+                        <li><a href="#">水晶</a></li>
+                    </ul>
+                </li>
+                <li><a href="./CustomPage.html">客製化</a></li>
+                <li><a href="./SizePage.html">尺寸測量</a></li>
+                <li><a href="./StoryPage.html">關於我們</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-right">
+            <a href="#"><img src="./images/Header_searchicon.svg" alt="search"></a>
+            <a href="./MemberPage.html"><img src="./images/Header_membericon.svg" alt="member"></a>
+            <a href="./ShoppingCartPage.html"><img src="./images/Header_carticon.svg" alt="cart"></a>
+        </nav>
+    </div>
+    <!--------------------content------------------>
+    <div class="container">
+        <div class="content1">
+            <h2>找出專屬於你的水晶</h2>
+            <nav class="productMenu">
+                <ul>
+                    <li><a href="">MBTI<img src="./images/submenu.svg" alt=""></a>
+                        <!-- 第二層開始 -->
+                        <ul>
+                            <li onclick="INTJ();"><a href="#">INTJ</a></li>
+                            <li onclick="INTP();"><a href="#">INTP</a></li>
+                            <li onclick="INFJ();"><a href="#">INFJ</a></li>
+                            <li onclick="INFP();"><a href="#">INFP</a></li>
+                            <li onclick="ENTJ();"><a href="#">ENTJ</a></li>
+                            <li onclick="ENTP();"><a href="#">ENTP</a></li>
+                            <li onclick="ENFJ();"><a href="#">ENFJ</a></li>
+                            <li onclick="ENFP();"><a href="#">ENFP</a></li>
+                            <li onclick="ISTJ();"><a href="#">ISTJ</a></li>
+                            <li onclick="ISFJ();"><a href="#">ISFJ</a></li>
+                            <li onclick="ISTP();"><a href="#">ISTP</a></li>
+                            <li onclick="ISFP();"><a href="#">ISFP</a></li>
+                            <li onclick="ESTJ();"><a href="#">ESTJ</a></li>
+                            <li onclick="ESFJ();"><a href="#">ESFJ</a></li>
+                            <li onclick="ESTP();"><a href="#">ESTP</a></li>
+                            <li onclick="ESFP();"><a href="#">ESFP</a></li>
+                        </ul>
+                        <!-- 第二層結束 -->
+                    </li>
+                    <li onclick="starSign();"><a href="">星座<img src="./images/submenu.svg" alt=""></a>
+                        <!-- 第二層開始 -->
+                        <ul>
+                            <li onclick="Jan();"><a href="#">摩羯座</a></li>
+                            <li onclick="Feb();"><a href="#">水瓶座</a></li>
+                            <li onclick="Mar();"><a href="#">雙魚座</a></li>
+                            <li onclick="Apr();"><a href="#">牡羊座</a></li>
+                            <li onclick="May();"><a href="#">金牛座</a></li>
+                            <li onclick="Jun();"><a href="#">雙子座</a></li>
+                            <li onclick="Jul();"><a href="#">巨蟹座</a></li>
+                            <li onclick="Aug();"><a href="#">獅子座</a></li>
+                            <li onclick="Sep();"><a href="#">處女座</a></li>
+                            <li onclick="Oct();"><a href="#">天秤座</a></li>
+                            <li onclick="Nov();"><a href="#">天蠍座</a></li>
+                            <li onclick="Dec();"><a href="#">射手座</a></li>
+                        </ul>
+                        <!-- 第二層結束 -->
+                    </li>
+                    <li><a href=""> 所有水晶 <img src="./images/submenu.svg" alt="">
+                        <!-- 第二層開始 -->
+                        <ul>
+                            <li onclick="Aquamarine();"><a href="#">海藍寶</a></li>
+                            <li onclick="Agate();"><a href="#">瑪瑙</a></li>
+                            <li onclick="Amethyst();"><a href="#">紫水晶</a></li>
+                            <li onclick="Citrine();"><a href="#">黃水晶</a></li>
+                            <li onclick="Moonstone();"><a href="#">月光石</a></li>
+                            <li onclick="Obsidian();"><a href="#">黑曜石</a></li>
+                            <li onclick="Smokyquartz();"><a href="#">茶晶</a></li>
+                            <li onclick="Labradorite();"><a href="#">拉長石</a></li>
+                            <li onclick="Rosequartz();"><a href="#">粉晶</a></li>
+                            <li onclick="Labradorite();"><a href="#">葡萄石</a></li>
+                            <li onclick="Lapislazuli();"><a href="#">青金石</a></li>
+                            <li onclick="Rutilatedquartz();"><a href="#">金髮晶</a></li>
+                            <li onclick="Tigerseye();"><a href="#">虎眼石</a></li>
+                            <li onclick="Garnet();"><a href="#">石榴石</a></li>
+                            <li onclick="Rockcrystal();"><a href="#">白水晶</a></li>
+                            <li onclick="Fluorite();"><a href="#">瑩石</a></li>
+                        </ul>
+                        <!-- 第二層結束 -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-----------------content2---------------------->
+        <div class="content2">
+            <div class="text" id="text">
+                <h2>ENFP競選者</h2>
+                <h4>人格特徵：充滿好奇心、活力充沛、聰明、情緒化、難以集中注意力</h4>
+                <p>競選者人格類型人格的特性，競選者人格類型人格的特性，競選者人格類型人格的特性，競選者人格類型人格的特性，競選者人格類型人格的特性，競選者人格類型人格的特性。選者人格類型人格的特性，競選者人格類型人格的特性，競選者人格類型人格的特性。
+                </p>
+                <h4>適合的水晶：拉長石</h4>
+                <p>適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因。</p>
+                <a href="#">SHOP</a>
+            </div>
+            <img id="mbtiImg" src="./images/Introduction_MBTI1.svg">
+        </div>
+
+        <!-----------------content3---------------------->
+        <div class="content3">
+            <ul>
+                <li onclick="changeMBTI()"><a href="" id="MBTI">MBTI</a></li>
+                <li onclick=""><a href="">12星座</a></li>
+                <li><a href="">所有水晶</a></li>
+            </ul>
+        </div>
+
+        <!-----------------content4---------------------->
+        <div class="content4">
+            <div class="banner">
+                <div class="item">
+                    <div class="pink">
+                        <div class="mask">
+                            <p>INTJ</p>
+                            <p>建築師</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pink">
+                        <div class="mask">
+                            <p>INTP</p>
+                            <p>邏輯學家</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="green">
+                        <div class="mask">
+                            <p>INFJ</p>
+                            <p>提倡者</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="green">
+                        <div class="mask">
+                            <p>INFP</p>
+                            <p>調停者</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pink">
+                        <div class="mask">
+                            <p>ENTJ</p>
+                            <p>指揮官</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pink">
+                        <div class="mask">
+                            <p>ENTP</p>
+                            <p>辯論家</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="green">
+                        <div class="mask">
+                            <p>ENFJ</p>
+                            <p>主人公</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="green">
+                        <div class="mask">
+                            <p>ENFP</p>
+                            <p>競選者</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="blue">
+                        <div class="mask">
+                            <p>ISTJ</p>
+                            <p>調查員</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="blue">
+                        <div class="mask">
+                            <p>ISFJ</p>
+                            <p>守護者</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="yellow">
+                        <div class="mask">
+                            <p>ISTP</p>
+                            <p>鑑賞家</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="yellow">
+                        <div class="mask">
+                            <p>ISFP</p>
+                            <p>探險家</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="blue">
+                        <div class="mask">
+                            <p>ESTJ</p>
+                            <p>總經理</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="blue">
+                        <div class="mask">
+                            <p>ESFJ</p>
+                            <p>執政官</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="yellow">
+                        <div class="mask">
+                            <p>ESTP</p>
+                            <p>企業家</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="yellow">
+                        <div class="mask">
+                            <p>ESFP</p>
+                            <p>表演者</p>
+                        </div>
+                        <img src="./images/Story_ENTJ_moonstone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------footer------------------>
+    <div class="footer">
+        <div class="footer-logo">
+            <a href="#"></a><img src="./images/Footer_logo.svg" alt="">
+        </div>
+        <nav class="footer-right">
+            <ul>
+                <li>關注我們</li>
+                <li><a href="#"><img src="./images/Footer_facebook.svg" alt="search"></a></li>
+                <li><a href="#"><img src="./images/Footer_ig.svg" alt="member"></a></li>
+                <li><a href="#"><img src="./images/Footer_shopee.svg" alt="cart"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</body>
+
+</html>

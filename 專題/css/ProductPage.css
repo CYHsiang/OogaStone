@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    background: #FDF1E8;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* ------------------header----------------- */
+.header {
+    z-index: 9999;
+    position: relative;
+    width: 95%;
+    background-color: #FDF1E8;
+    display: flex;
+    padding: 0 70px;
+    position: fixed;
+    top: 0;
+}
+
+.logo-small {
+    padding: 15px 10px 0 0;
+}
+
+
+.navLeft li {
+    float: left;
+    list-style: none;
+}
+
+.navLeft a {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+
+    text-align: center;
+}
+
+.navLeft ul ul {
+    background-color: #FDF1E8;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 10px 13px -7px #959595;
+}
+
+.navLeft li li {
+    clear: left;
+}
+
+.navLeft a {
+    color: #21402F;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.navLeft li:hover ul {
+    display: block;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.nav-right img {
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+
+/* ------------------content---------------- */
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    font-weight: bold;
+}
+
+.product {
+    width: 100%;
+    color: #21402F;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.item {
+    color: #21402F;
+    display: inline-block;
+    padding: 20px;
+}
+
+.item h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.item p {
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.productImg img{
+    width: 380px;
+    height: 380px;
+    margin-bottom: 20px;
+}
+.item img {
+    float: right;
+}
+.item hr{
+    border-top: 2px solid #959595;
+}
+
+.page {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.page a {
+    font-size: 23px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #979E8A;
+}
+
+.page a:focus {
+    color: #21402F;
+}
+
+.page a:active {
+    color: #21402F;
+}
+
+.gift {
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    z-index: 1;
+}
+
+/* ------------------footer----------------- */
+.footer {
+    background-color: #979E8A;
+    display: flex;
+    padding: 0 70px;
+}
+
+.footer-logo {
+    display: inline-block;
+    padding: 15px 0;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.footer-right ul {
+    color: #FDF1E8;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-right img {
+    margin-left: 30px;
+}

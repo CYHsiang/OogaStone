@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooga Stone</title>
+    <!-- title 網頁LOGO -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+
+    <!-- popup 輪播 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+    <!-- GoogleFont 字體'Noto Serif TC', serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Index aos動畫套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- js -->
+    <script src="./js/index.js"></script>
+</head>
+
+
+<body>
+    <!--------------------header------------------>
+    <div class="header">
+        <div class="logo-small">
+            <a href="./index.html"><img src="./images/Header_smallgreen.svg" alt="Ooga Stone"></a>
+        </div>
+        <nav class="navLeft">
+            <ul>
+                <li><a href="./ProductPage-1.html">所有商品</a>
+                    <ul>
+                        <li><a href="#">耳環</a></li>
+                        <li><a href="#">戒指</a></li>
+                        <li><a href="#">項鍊</a></li>
+                        <li><a href="#">手鍊</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">活動消息</a>
+                    <ul>
+                        <li onclick="OpenModal()"><a href="#">折價券</a></li>
+                        <li><a href="#">限時折扣</a></li>
+                    </ul>
+                </li>
+                <li><a href="./IntroductionPage.html">水晶推薦</a>
+                    <ul>
+                        <li><a href="#">MBTI</a></li>
+                        <li><a href="#">星座</a></li>
+                        <li><a href="#">水晶</a></li>
+                    </ul>
+                </li>
+                <li><a href="./CustomPage.html">客製化</a></li>
+                <li><a href="./SizePage.html">尺寸測量</a></li>
+                <li><a href="./StoryPage.html">關於我們</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-right">
+            <a href="#"><img src="./images/Header_searchicon.svg" alt="search"></a>
+            <a href="./MemberPage.html"><img src="./images/Header_membericon.svg" alt="member"></a>
+            <a href="./ShoppingCartPage.html"><img src="./images/Header_carticon.svg" alt="cart"></a>
+        </nav>
+    </div>
+
+    <!---------- header/活動消息/優惠券視窗 -------------->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <div onclick="CloseModal()" class="CloseIcon"><img src="./images/Header_popupClose.svg" alt=""></div>
+            <div class="popupTitle">
+                <img src="./images/Header_popupLogo.svg" alt="">
+                <h3>領取優惠券</h3>
+                <h3>我的優惠券</h3>
+                <h3>優惠券紀錄</h3>
+            </div>
+
+            <div class="p-5 bgPopup">
+                <div class="slider responsive">
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem2.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem3.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem2.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem3.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem2.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem3.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="popupText">
+                            <p>11/11一個人也很好</p>
+                            <p>30%</p>
+                            <p>OFF</p>
+                            <p>Everything in our shop</p>
+                            <p>領取優惠券</p>
+                        </div>
+                        <img src="./images/Header_popupItem1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <Script>
+        $(".responsive").slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+            ]
+        });
+    </Script>
+
+    <!-- 折價劵彈出視窗 -->
+    <script>
+        function OpenModal() {
+            let element = document.getElementById('overlay')
+            element.style.display = 'block'
+        }
+        function CloseModal() {
+            let element = document.getElementById('overlay')
+            element.style.display = 'none'
+        }
+    </script>
+
+
+    <!--------------------banner------------------>
+    <div class="container">
+        <div class="banner">
+            <div class="text-left">
+                <p>Ooga Stone嗚嘎石堂，嗚嘎蝦嘎的Ooga，</p>
+                <p>本店秉持二大原則：</p>
+                <p> 親自嚴選石材｜手工用心製作</p>
+            </div>
+            <div class="text-right">
+                <p>嗚嘎石堂</p>
+            </div>
+            <div class="logo">
+                <div class="icon-logo">
+                    <div class="logo_img" style="display:none;"></div>
+                    <div class="logo_ellipse" data-aos="zoom-in" data-aos-duration="2000"></div>
+                    <div class="logo_logo" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000"></div>
+                    <div class="logo_ooga" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000"></div>
+                    <div class="logo_circle" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="3000"></div>
+                </div>
+            </div>
+            <div class="link">
+                <a href=""><img src="./images/Index_iconFacebook.svg" alt=""></a>
+                <a href=""><img src="./images/Index_iconIg.svg" alt=""></a>
+                <a href=""><img src="./images/Index_iconShopee.svg" alt=""></a>
+            </div>
+            <div class="bottom-text" onmouseover="showImg()" onmouseout="showLogo()">
+                <h3>打造你的專屬飾品</h3>
+            </div>
+            <div class="bottom-arrow">
+                <img src="./images/Index_arrow.svg" alt="">
+            </div>
+        </div>
+        <!--------------------banner2------------------>
+        <div class="banner2">
+            <div class="banner2-L">
+                <div class="title">
+                    <p><strong>客製化</strong> 屬於自己的耳環</p>
+                </div>
+
+                <div class="p1">
+                    <img src="./images/Index_banner2.svg" alt="">
+                </div>
+            </div>
+
+            <div class="banner2-R">
+                <p class="text2">
+                    挑選喜歡的樣式與水晶，讓我帶你一起創造出屬於自己獨一無二的首飾吧!
+                </p>
+
+            </div>
+
+            <div class="STAR2">
+                <div class="start">
+                    <p><a href="./CustomPage.html"> START</a></p>
+                </div>
+            </div>
+
+
+            <div class="Design">
+                <img src="./images/Index_b2_DesignMyOwn.svg" alt="">
+            </div>
+        </div>
+        <!--------------------banner3------------------>
+        <div class="banner3">
+            <div class="banner-L">
+                <div class="title3">
+                    <p><strong>尋找</strong> 適合自己的水晶</p>
+                </div>
+                <div class="text3">
+                    <p>不知道該如何挑選水晶嗎?適合自己星座或MBTI的水晶又有那些呢?<br>
+                        快來了解關於水晶的各種小知識吧!
+                    </p>
+                </div>
+                <div class="STAR3">
+                    <div class="start">
+                        <p><a href="./IntroductionPage.html">START</a></p>
+                    </div>
+                </div>
+                <div class="FindMyOwn">
+                    <img src="./images/Index_b3_FindMyOwn.svg" alt="">
+                </div>
+            </div>
+            <div class="banner-R">
+                <p class="MBTI">MBTI & 星座</p>
+                <img class="p2" src="./images/Index_banner3.svg" alt="">
+            </div>
+        </div>
+        <!--------------------banner4------------------>
+        <div class="banner4">
+            <div class="title4">
+                <h1>商品種類</h1>
+                <div class="bottom-text4">
+                    <h2>挑選你的專屬飾品</h2>
+                    <div class="bottom-arrow">
+                        <img src="./images/Index_arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/Index_product.svg" alt="">
+            </div>
+            <div class="content">
+                <div class="productItem">
+                    <div class="item">
+                        <div class="mask">
+                            <p>耳環</p>
+                        </div>
+                    </div>
+                    <img src="./images/Index_耳環.svg" alt="">
+                </div>
+                <div class="productItem">
+                    <div class="item">
+                        <div class="mask">
+                            <p>項鍊</p>
+                        </div>
+                    </div>
+                    <img src="./images/Index_項鍊.svg" alt="">
+                </div>
+                <div class="productItem">
+                    <div class="item">
+                        <div class="mask">
+                            <p>戒指</p>
+                        </div>
+                    </div>
+                    <img src="./images/Index_戒指.svg" alt="">
+                </div>
+                <div class="productItem">
+                    <div class="item">
+                        <div class="mask">
+                            <p>手鍊</p>
+                        </div>
+                    </div>
+                    <img src="./images/Index_手鍊.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------footer------------------>
+    <div class="footer">
+        <div class="footer-logo">
+            <a href="#"></a><img src="./images/Footer_logo.svg" alt="">
+        </div>
+        <nav class="footer-right">
+            <ul>
+                <li>關注我們</li>
+                <li><a href="#"><img src="./images/Footer_facebook.svg" alt="search"></a></li>
+                <li><a href="#"><img src="./images/Footer_ig.svg" alt="member"></a></li>
+                <li><a href="#"><img src="./images/Footer_shopee.svg" alt="cart"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
