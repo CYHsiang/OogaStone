@@ -115,6 +115,6 @@ $(function ($) {
 
 $(document).ready(function () {
     $('#blowup_image').blowup({
-        scale: 3
+        scale: 1.5
     });
 })
