@@ -189,7 +189,9 @@ body {
     float: right;
 }
 
-.crystalUp {
+
+
+/* .crystalUp {
     width: 932px;
     height: 218px;
     margin: auto;
@@ -198,7 +200,6 @@ body {
 }
 
 .crystalDown {
-    /* margin-top: 20px; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -216,7 +217,7 @@ body {
 
 .mask :hover {
     display: none;
-}
+} */
 
 
 /* --------content2-cart--------- */
