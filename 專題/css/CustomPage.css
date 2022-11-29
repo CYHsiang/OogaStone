@@ -173,7 +173,7 @@ body {
     text-decoration: none;
 }
 
-/* -------------------------------- */
+/* ----------------選擇水晶---------------- */
 .crystalName {
     margin: auto;
     width: 1270px;
@@ -188,7 +188,7 @@ body {
 .crystalName>img:nth-child(2) {
     float: right;
 }
-
+/* 選擇水晶 上層 */
 .upper {
     width: 932px;
     height: 218px;
@@ -226,6 +226,7 @@ body {
     margin: auto;
 }
 
+/* < 選擇水晶 下層  */
 .lower {
     display: flex;
     justify-content: space-between;
