@@ -13,7 +13,7 @@ function INTJ() {
         '<h4>' + "適合的水晶：海藍寶" + '</h4>' +
         '<p>' + "海藍寶能提升語言與溝通能力，同時也是愛與和平的象徵，有助於不善表達情感的INTJ更樂於展現自我，收斂鋒芒變得更加柔和。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI1.svg";
+    img.src = "images/Product/1_1.jpg";
 }
 
 function INTP() {
@@ -25,7 +25,7 @@ function INTP() {
         '<h4>' + "適合的水晶：紅瑪瑙" + '</h4>' +
         '<p>' + "紅瑪瑙能夠平衡INTP過於理性的思维方式，有助於INTP增加包容與同理心。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI2.svg";
+    img.src = "images/Product/2_1.jpg";
 
 }
 
@@ -38,7 +38,7 @@ function INFJ() {
         '<h4>' + "適合的水晶：紫水晶" + '</h4>' +
         '<p>' + "善解人意而經常忽略自己感受的INFJ，建議配戴紫水晶，協助调整心態，平衡生理、心理與情緒，提供安神的療癒力，更懂得愛自己。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI3.svg";
+    img.src = "images/Product/8_1.jpg";
 }
 
 function INFP() {
@@ -50,7 +50,7 @@ function INFP() {
         '<h4>' + "適合的水晶：黃水晶" + '</h4>' +
         '<p>' + "黃水晶有助於INFP 增強自信與理智，平緩心境，更勇於追求夢想。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI4.svg";
+    img.src = "images/Product/11_1.jpg";
 }
 
 function ENTJ() {
@@ -62,7 +62,7 @@ function ENTJ() {
         '<h4>' + "適合的水晶：白月光石" + '</h4>' +
         '<p>' + "透過白月光石温柔的能量，調和性格，協助稳定情绪，讓ENTJ變得更细腻，且溫柔對待他人，穩定人際關係。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI5.svg";
+    img.src = "images/Product/ring/6_1.jpg";
 }
 
 function ENTP() {
@@ -74,7 +74,7 @@ function ENTP() {
         '<h4>' + "適合的水晶：黑曜石" + '</h4>' +
         '<p>' + "黑曜石有穩定的磁場，有助於ENTP舒缓壓力，加強行動力。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI6.svg";
+    img.src = "images/Product/5_2.jpg";
 }
 
 function ENFJ() {
@@ -86,7 +86,7 @@ function ENFJ() {
         '<h4>' + "適合的水晶：茶晶" + '</h4>' +
         '<p>' + "茶晶能使感到茫然的 ENFJ適度放寬心，同時協助分擔負面能量，消除內心焦慮，使ENFJ別過於執著、鑽牛角尖。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI7.svg";
+    img.src = "images/Product/15_1.jpg";
 }
 
 function ENFP() {
@@ -98,7 +98,7 @@ function ENFP() {
         '<h4>' + "適合的水晶：拉長石" + '</h4>' +
         '<p>' + "拉長石有助於熱情如火又具感染力，興趣廣泛的ENFP消除疲勞，增加體力。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI8.svg";
+    img.src = "images/Product/18_1.jpg";
 }
 
 function ISTJ() {
@@ -110,7 +110,7 @@ function ISTJ() {
         '<h4>' + "適合的水晶：粉晶" + '</h4>' +
         '<p>' + "配戴粉晶，能助於加強親和力改善人際關係。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI9.svg";
+    img.src = "images/Product/4_1.jpg";
 }
 
 function ISFJ() {
@@ -122,7 +122,7 @@ function ISFJ() {
         '<h4>' + "適合的水晶：葡萄石" + '</h4>' +
         '<p>' + "葡萄石能幫助ISFJ緩解壓力，维持身心平衡，幫助ISFJ放鬆自己。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI10.svg";
+    img.src = "images/Product/16_1.jpg";
 }
 
 function ISTP() {
@@ -134,7 +134,7 @@ function ISTP() {
         '<h4>' + "適合的水晶：青金石" + '</h4>' +
         '<p>' + "青金石能增強洞察力且使大腦保持清晰，非常適合充滿好奇心且喜愛思考的 ISTP，可以讓他們注意力更集中，減少分心。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI11.svg";
+    img.src = "images/Product/13_1.jpg";
 }
 
 function ISFP() {
@@ -146,7 +146,7 @@ function ISFP() {
         '<h4>' + "適合的水晶：金髮晶" + '</h4>' +
         '<p>' + "有時會缺乏規劃與過度依賴他人的ISFP，建議可以配戴金髮晶，增強魄力與決策力。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI12.svg";
+    img.src = "images/Product/10_1.jpg";
 }
 
 function ESTJ() {
@@ -158,7 +158,7 @@ function ESTJ() {
         '<h4>' + "適合的水晶：藍虎眼石" + '</h4>' +
         '<p>' + "藍虎眼石有助於ESTJ變得更加有彈性，對於想跳脫框架改變自己的ESTJ是個不錯的選擇。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI13.svg";
+    img.src = "images/Product/17_1.jpg";
 }
 
 function ESFJ() {
@@ -170,7 +170,7 @@ function ESFJ() {
         '<h4>' + "適合的水晶：石榴石" + '</h4>' +
         '<p>' + "較在意他人想法的ESFJ，建議可以配戴石榴石，增加自信，找回內在平衡。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI14.svg";
+    img.src = "images/Product/bracelet/1_1.jpg";
 }
 
 function ESTP() {
@@ -182,7 +182,7 @@ function ESTP() {
         '<h4>' + "適合的水晶：藍紋瑪瑙" + '</h4>' +
         '<p>' + "藍紋瑪瑙能幫助緩解煩躁與壓力，讓行事衝動的ESTP冷靜下來，內心平靜的去處理事情。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI15.svg";
+    img.src = "images/Product/3_1.jpg";
 }
 
 function ESFP() {
@@ -194,7 +194,7 @@ function ESFP() {
         '<h4>' + "適合的水晶：螢石" + '</h4>' +
         '<p>' + "代表著鎮定、思考與專注，能量穩定柔和的螢石，有助於緩和ESFP，避免過度急躁被情緒牽著走，亦能幫助屏除雜亂思緒，集中注意力。" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_MBTI16.svg";
+    img.src = "images/Product/20_1.jpg";
 }
 
 // 點選 12星座 改變內容------------------------
@@ -210,7 +210,7 @@ function Jan() {
         '</br>' +
         '<h4>' + "適合的水晶：虎眼石" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign1.svg";
+    img.src = "images/Product/ring/2_1.jpg";
 }
 
 function Feb() {
@@ -224,7 +224,7 @@ function Feb() {
         '</br>' +
         '<h4>' + "適合的水晶：紫水晶" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign2.svg";
+    img.src = "images/Product/7_1.jpg";
 }
 
 function Mar() {
@@ -238,7 +238,7 @@ function Mar() {
         '</br>' +
         '<h4>' + "適合的水晶：粉晶" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign3.svg";
+    img.src = "images/Product/4_1.jpg";
 }
 
 function Apr() {
@@ -252,7 +252,7 @@ function Apr() {
         '</br>' +
         '<h4>' + "適合的水晶：白水晶" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign4.svg";
+    img.src = "images/Product/21_1.jpg";
 }
 
 function May() {
@@ -266,7 +266,7 @@ function May() {
         '</br>' +
         '<h4>' + "適合的水晶：海藍寶" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign5.svg";
+    img.src = "images/Product/1_1.jpg";
 }
 
 function Jun() {
@@ -280,7 +280,7 @@ function Jun() {
         '</br>' +
         '<h4>' + "適合的水晶：黃水晶" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign6.svg";
+    img.src = "images/Product/bracelet/2_1.jpg";
 }
 
 
@@ -295,7 +295,7 @@ function Jul() {
         '</br>' +
         '<h4>' + "適合的水晶：紅瑪瑙" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign7.svg";
+    img.src = "images/Product/2_1.jpg";
 }
 
 function Aug() {
@@ -309,7 +309,7 @@ function Aug() {
         '</br>' +
         '<h4>' + "適合的水晶：金髮晶" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign8.svg";
+    img.src = "images/Product/10_1.jpg";
 }
 
 function Sep() {
@@ -323,7 +323,7 @@ function Sep() {
         '</br>' +
         '<h4>' + "適合的水晶：藍瑪瑙" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign9.svg";
+    img.src = "images/Product/ring/5_1.jpg";
 
 }
 
@@ -338,7 +338,7 @@ function Oct() {
         '</br>' +
         '<h4>' + "適合的水晶：石榴石" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign10.svg";
+    img.src = "images/Product/bracelet/1_1.jpg";
 }
 
 
@@ -353,7 +353,7 @@ function Nov() {
         '</br>' +
         '<h4>' + "適合的水晶：青金石" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign11.svg";
+    img.src = "images/Product/13_1.jpg";
 }
 
 function Dec() {
@@ -367,7 +367,7 @@ function Dec() {
         '</br>' +
         '<h4>' + "適合的水晶：拉長石" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_StarSign12.svg";
+    img.src = "images/Product/18_1.jpg";
 }
 
 // 點選 所有水晶 改變內容------------------------
@@ -382,7 +382,7 @@ function Aquamarine() {
         '<h4>' + "外觀：透明而帶著藍色或海藍色的寶石" + '</h4>' +
         '<h4>' + "功效：增強表達與說服力、改善呼吸系統、助冷靜、安定思緒" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal1.svg";
+    img.src = "images/Product/bracelet/4_1.jpg";
 }
 
 function Agate() {
@@ -396,7 +396,7 @@ function Agate() {
         '<h4>' + "外觀：色彩鮮艷，帶有條帶狀或環帶狀紋路" + '</h4>' +
         '<h4>' + "功效：增強表達與說功效" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal2.svg";
+    img.src = "images/Product/2_1.jpg";
 }
 
 function Amethyst() {
@@ -409,7 +409,7 @@ function Amethyst() {
         '<h4>' + "外觀：透明而外觀：顏色從淺到深的紫色帶著藍色或海藍色的寶石" + '</h4>' +
         '<h4>' + "功效：提升智慧、助思考、提升貴人運、提高直覺力、穩定情緒" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal3.svg";
+    img.src = "images/Product/8_1.jpg";
 }
 
 function Citrine() {
@@ -422,7 +422,7 @@ function Citrine() {
         '<h4>' + "外觀：含有鐵離子，顏色從淡黃至褐色" + '</h4>' +
         '<h4>' + "功效：招財、平穩情緒、理性、振奮精神、助消化" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal4.svg";
+    img.src = "images/Product/11_1.jpg";
 }
 
 function Moonstone() {
@@ -435,7 +435,7 @@ function Moonstone() {
         '<h4>' + "外觀：白色半透明狀，經由光線折射產生不同色調的光暈，常見為藍光" + '</h4>' +
         '<h4>' + "功效：助眠、鎮定情緒、療癒心靈、促進感情和諧、養顏美容" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal5.svg";
+    img.src = "images/Product/ring/6_1.jpg";
 }
 
 function Obsidian() {
@@ -448,7 +448,7 @@ function Obsidian() {
         '<h4>' + "外觀：通常為不透明的黑色，表面會有彩虹眼或是像金沙般的效應" + '</h4>' +
         '<h4>' + "功效：避邪擋煞、吸收負能量、防小人" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal6.svg";
+    img.src = "images/Product/5_2.jpg";
 }
 
 function Smokyquartz() {
@@ -461,7 +461,7 @@ function Smokyquartz() {
         '<h4>' + "外觀：顏色從半透明灰色一直到全透明的灰褐色都有，有的甚至為黑色" + '</h4>' +
         '<h4>' + "功效：助眠、鎮定情緒、療癒心靈、促進感情和諧、養顏美容" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal7.svg";
+    img.src = "images/Product/15_1.jpg";
 }
 
 function Labradorite() {
@@ -474,7 +474,7 @@ function Labradorite() {
         '<h4>' + "外觀：色澤較月光石深，為半透明到不透明的灰黑色系礦石，透過改變角度的光線反射，能出現虹彩光暈" + '</h4>' +
         '<h4>' + "功效：增強直覺、提高洞察力、消除疲勞、靈性、激發潛能" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal8.svg";
+    img.src = "images/Product/18_1.jpg";
 }
 
 function Rosequartz() {
@@ -487,20 +487,20 @@ function Rosequartz() {
         '<h4>' + "外觀：不透到半透至透明的都有，因含有微量鈦元素而形成粉紅色" + '</h4>' +
         '<h4>' + "功效：招桃花、增進人緣、愉悅心情、療癒情傷" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal9.svg";
+    img.src = "images/Product/4_1.jpg";
 }
 
-function Labradorite() {
+function Prehnite() {
     var elem = document.getElementById('text');
     var img = document.getElementById('mbtiImg');
     elem.innerHTML = '<h2>' + "葡萄石" + '</h2>' +
-        '<h2>' + "Labradorite" + '</h2>' +
+        '<h2>' + "Prehnite" + '</h2>' +
         '</br>' +
         '<p>' + "有著「希望之石」的稱號，又稱「綠碧柳」。" + '</p>' +
         '<h4>' + "外觀：常見為透明和半透明的淡綠色，像極葡萄的果肉。" + '</h4>' +
         '<h4>' + "功效：緩解壓力、舒緩緊張情緒、撫平傷痛、增強毅力" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal10.svg";
+    img.src = "images/Product/16_1.jpg";
 }
 
 function Lapislazuli() {
@@ -513,7 +513,7 @@ function Lapislazuli() {
         '<h4>' + "外觀：常為不透明的藍色，含有金色的黃鐵礦斑點" + '</h4>' +
         '<h4>' + "功效：助冥想、集中注意力、緩解焦慮、冷靜思考" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal11.svg";
+    img.src = "images/Product/13_1.jpg";
 }
 
 function Rutilatedquartz() {
@@ -526,7 +526,7 @@ function Rutilatedquartz() {
         '<h4>' + "外觀：由於內部的金紅石包裹體使其呈現金色的色澤，髮絲細稱為金髮晶，髮絲粗多呈同一方向則為鈦晶" + '</h4>' +
         '<h4>' + "功效：招財、提升魄力、增加信心、增加判斷力" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal12.svg";
+    img.src = "images/Product/10_1.jpg";
 }
 
 
@@ -542,7 +542,7 @@ function Tigerseye() {
         '<p>' + "◆ 黃虎眼：招財、積極進取、提高注意力" + '</p>' +
         '<p>' + "◆ 藍虎眼：軟化固執、積極進取、提升洞察力" + '</p>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal13.svg";
+    img.src = "images/Product/17_1.jpg";
 }
 
 function Garnet() {
@@ -555,7 +555,7 @@ function Garnet() {
         '<h4>' + "外觀：常見為暗紅色與棕紅色" + '</h4>' +
         '<h4>' + "功效：促進血液循環、加強自信、增進活力、堅定意志" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal14.svg";
+    img.src = "images/Product/14_1.jpg";
 }
 
 function Rockcrystal() {
@@ -568,7 +568,7 @@ function Rockcrystal() {
         '<h4>' + "外觀：透明而帶著藍色或海藍色的寶石" + '</h4>' +
         '<h4>' + "功效：增強表達與說服力、改善呼吸系統、助冷靜、安定思緒" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal15.svg";
+    img.src = "images/Product/necklace/1_1.jpg";
 }
 
 function Fluorite() {
@@ -581,7 +581,7 @@ function Fluorite() {
         '<h4>' + "外觀：螢石有多種顏色，由雜質、輻射暴露等因素決定，常見為紫色與綠色" + '</h4>' +
         '<h4>' + "功效：鎮定、釐清思緒、平復情緒、集中注意力" + '</h4>' +
         '<a href="#">SHOP</a>';
-    img.src = "images/Introduction_Crystal16.svg";
+    img.src = "images/Product/20_1.jpg";
 }
 
 
