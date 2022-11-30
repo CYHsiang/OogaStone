@@ -97,6 +97,7 @@ body {
     height: 470px;
     margin: auto;
     margin-left: 100px;
+    margin-top: 0px;
 }
 
 .text img {
@@ -114,7 +115,7 @@ body {
 
 .text p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 35px;
     color: #979E8A;
     text-align: center;
 }
@@ -123,11 +124,11 @@ body {
     width: 200px;
     height: 50px;
     border: solid 1px #21402F;
-    margin-left: 70px;
+    margin-left: 63px;
     font-size: 20px;
     color: #FDF1E8;
     background-color: #21402F;
-    margin-top: 70px;
+    margin-top: 55px;
     font-family: 'Noto Serif TC', serif;
 }
 

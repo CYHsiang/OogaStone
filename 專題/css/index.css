@@ -4,7 +4,6 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-
 /* border: solid 1px red; */
 /* ------------------header----------------- */
 .header {
@@ -405,6 +404,9 @@ body {
     background-color: #FDF1E8;
     margin-bottom: 70px;
     padding-bottom: 100px;
+    /* padding: 70px 0; */
+    /* margin: 70px 0; */
+    /* border: 1px solid red; */
 }
 
 .title4 {
@@ -420,11 +422,6 @@ body {
     font-weight: bold;
     color: #21402F;
     font-size: 48px;
-}
-
-
-.animate__animated.animate__bounce {
-    --animate-duration: 2s;
 }
 
 .bottom-text4 h2 {
@@ -464,11 +461,6 @@ body {
     display: block;
 }
 
-/* 商品區塊奇數margin-top */
-.productItem:nth-child(odd) {
-    margin-top: 70px;
-}
-
 .mask {
     width: 250px;
     height: 250px;
@@ -485,6 +477,15 @@ body {
 .item :hover {
     display: none;
 }
+
+
+
+.productItem:nth-child(odd) {
+    margin-top: 70px;
+}
+
+
+
 
 /* ------------------footer----------------- */
 .footer {
