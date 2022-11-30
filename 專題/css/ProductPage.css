@@ -68,23 +68,21 @@ body {
 /* ------------------content---------------- */
 .container {
     margin: 0 auto;
-    width: 1440px;
+    width: 1236px;
     font-weight: bold;
 }
 
 .product {
     width: 100%;
     color: #21402F;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     margin-top: 70px;
 }
 
 .item {
     color: #21402F;
-    display: inline-block;
-    padding: 20px;
+    padding: 20px 16px;
+    float: left;
+
 }
 
 .item h1 {
@@ -94,40 +92,47 @@ body {
 
 .item p {
     font-size: 24px;
-    display: inline-block;
     margin-bottom: 15px;
+    float: left;
 }
-.productImg img{
+
+.item img {
+    float: right;
+    padding-top: 5px;
+}
+
+.productImg img {
     width: 380px;
     height: 380px;
     margin-bottom: 20px;
+    padding: 0;
 }
-.item img {
-    float: right;
-}
-.item hr{
+
+.item hr {
     border-top: 2px solid #959595;
+    clear: both;
 }
 
 .page {
     text-align: center;
     padding: 40px 0;
+    clear: both;
 }
 
 .page a {
     font-size: 23px;
     text-decoration: none;
     padding: 0 10px;
-    color: #979E8A;
+    /* color: #979E8A; */
 }
 
-.page a:focus {
+/* .page a:focus {
     color: #21402F;
-}
+} */
 
-.page a:active {
+/* .page a:active {
     color: #21402F;
-}
+} */
 
 .gift {
     position: fixed;
@@ -141,6 +146,7 @@ body {
     background-color: #979E8A;
     display: flex;
     padding: 0 70px;
+    clear: both;
 }
 
 .footer-logo {
