@@ -15,6 +15,7 @@ body {
     padding: 0 70px;
     position: fixed;
     top: 0;
+    right: 0;
 }
 
 .logo-small {
@@ -66,13 +67,14 @@ body {
 }
 
 /* ------------------content---------------- */
-.container {
+
+.main {
+    background-color: #FDF1E8;
     margin: 0 auto;
     width: 1440px;
 }
 
 .content {
-
     margin: 60px 70px 0;
     display: flex;
 }
@@ -186,7 +188,6 @@ body {
 
 .crystalWrapper {
     background-color: #959595;
-    /* border: 1px solid red; */
     width: 90%;
     margin: auto;
 }

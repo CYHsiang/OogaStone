@@ -1,314 +1,305 @@
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-
-<title>图片的轮换</title>
-
-<script type="text/javascript">
-
-
-
-/*
-
-2013-08-21
-
-chenhui
-
-图片轮换
-
-*/
-
-var now = 1;
-
-var max = 6;
-
-var t ;
-
-function changeAdvertisement() {
-
-//显示当前的图片
-
-document.getElementById("ad" + now).style.display = "block";
-
-document.getElementsByName("num")[now-1].style.background = "#fe7400";
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+</head>
+<script>
 
 
-//隐藏非当前的图片
+    $(function () {
 
-for(var index = 1; index <= 6; index++) {
-
-if(index != now) {
-
-document.getElementById("ad" + index).style.display = "none";
-
-document.getElementsByName("num")[index-1].style.background = "pink";
-
-}
-
-}
+        $(".sliderRow").slick({
+            rows: 2,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true, // 預設 false 指示点
+        });
 
 
-if(now == max) {
-
-now = 1;
-
-} else {
-
-now++;
-
-}
+        $('.sliderTwo').slick({
+            rows: 2,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true, // 預設 false 指示点
+        });
 
 
-//setTimeout("changeAdvertisement()",2000);
+        // $('.slider-for').slick({
+        //     slidesToShow: 1, //預設 1 幻燈片顯示幾張
+        //     slidesToScroll: 1,//預設 1 幻灯片每次滑動幾張
+        //     arrows: false, // 預設 true 左右箭頭是否顯示
+        //     fade: true, // 預設 false 淡入淡出
+        //     asNavFor: '.slider-nav'//將滑塊設置為其他滑塊的導航（類或ID名稱）,適用於多個輪播圖共用一個導航
+        // });
 
-t = setTimeout("changeAdvertisement()",5000);
+        // $('.slider-nav').slick({
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     asNavFor: '.slider-for',
+        //     dots: true, // 預設 false 指示点
+        //     arrows: false, // 預設 true 左右箭頭是否顯示
+        //     focusOnSelect: true // 預設 false
+        // });
 
-}
+    });
 
-
-function showNow(params) {
-
-now = params;
-
-
-clearTimeout(t);//重新开始
-
-changeAdvertisement();
-
-}
-
-function focus_prev(){
-
-var n = (now+3)%6;
-
-n = n+1;
-
-showNow(n);
-
-}
-
-function focus_next(){
-
-var n = (now+5)%6;
-
-n = n+1;
-
-showNow(n);
-
-}
-
+    function slickGoTo(key) {
+        $('.slider-nav').slick('slickGoTo', key);
+    }
 </script>
+<style>
+    .upper {
+        border: solid 1px red;
+        width: 60%;
+        margin: auto;
+    }
 
-<style type="text/css">
+    .lower {
+        width: 75%;
+        margin: auto;
+    }
 
-#adver {
+    .crystalUp {
+        position: relative;
+    }
 
-position:relative;
+    .crystalTxt {
+        background-image: url(./images/CustomOpacity.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 1;
+        transition: opacity 1s;
+    }
 
-/*border:1px solid red;*/
+    .crystalUp:hover .crystalTxt {
+        opacity: 0;
+    }
 
-width:700px;
+    .crystalUp h2 {
+        font-size: 24px;
+        color: #fff;
+        margin: auto;
+    }
 
-height:290px;
+    body {
+        margin: auto;
+        background-color: #ddd;
+    }
 
-}
+    
+    /* .wrapper {
+        width: 80%;
+    } */
 
-#adver .num{
-
-height:30px;
-
-width:240px;
-
-/*border:1px solid blue;*/
-
-position:absolute;
-
-right:10px;
-
-bottom:10px;
-
-}
-
-#adver .num .ad{
-
-pink;< /p>
-
-color:blue;
-
-opacity:0.7;
-
-font-size:20px;
-
-height:30px;
-
-width:30px;
-
-line-height:30px;
-
-text-align:center;
-
-display:block;
-
-text-decoration:none;
-
-border-radius:15px 15px 15px 15px;
-
-float:left;
-
-margin-left:10px;
-
-}
-
-#adver .num .ad:hover{
-
-background:#ff7400;
-
-opacity:0.8;
-
-}
-
-#left,#right{
-
-width:50px;
-
-height:250px;
-
-line-height:250px;
-
-background-color:#000;
-
-opacity:0.3;
-
-Alpha:(opacity=50);
-
-display:block;
-
-color:#fff;
-
-}
-
-#left{
-
-position:absolute;
-
-left:0px;
-
-top:0px;
-
-}
-
-#right{
-
-position:absolute;
-
-right:0px;
-
-top:0px;
-
-}
-
+    /* .item1 {
+        width: 50px;
+        height: 50px;
+    } */
+   
 </style>
 
-</head>
+<body>
 
-<body onload="changeAdvertisement()">
+    <body>
+        <!-- <div class="container"> -->
+            <!-- <div class="wrapper">   -->
+                <div class="sliderTwo">
+                    <!-- 第一頁 -->
+                    <div>
+                        <div class="d-flex upper">
+                            <div class="col-sm  ">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm ">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--下層 -->
+                    <div>
+                        <div class="d-flex lower">
+                            <div class="col-sm">
 
-<div id="adver">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-<div id="ad1">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-<a href="#">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-<img src="p_w_picpaths/1.jpg" alt="" />
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-</a>
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二頁 -->
+                    <div>
+                        <div class="d-flex upper">
+                            <div class="col-sm  ">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm ">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--下層 -->
+                    <div>
+                        <div class="d-flex lower">
+                            <div class="col-sm">
 
-</div>
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-<div id="ad2" style="display:none;">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-<a href="#">
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-<img src="p_w_picpaths/2.jpg" alt="" />
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
 
-</a>
+                                <div class="crystalUp">
+                                    <img src="./images/Custom_Cystal1.png">
+                                    <div class="crystalTxt">
+                                        <h2>黃水晶</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</div>
 
-<div id="ad3" style="display:none;">
-
-<a href="#">
-
-<img src="p_w_picpaths/3.jpg" alt="" />
-
-</a>
-
-</div>
-
-<div id="ad4" style="display:none;">
-
-<a href="#">
-
-<img src="p_w_picpaths/4.jpg" alt="" />
-
-</a>
-
-</div>
-
-<div id="ad5" style="display:none;">
-
-<a href="#">
-
-<img src="p_w_picpaths/5.jpg" alt="" />
-
-</a>
-
-</div>
-
-<div id="ad6" style="display:none;">
-
-<a href="#">
-
-<img src="p_w_picpaths/6.jpg" alt="" />
-
-</a>
-
-</div>
-
-<div class="num">
-
-<a class="ad" name="num" href="#" onmouseover="showNow(1)">1</a>
-
-<a class="ad" name="num" href="#" onmouseover="showNow(2)">2</a>
-
-<a class="ad" name="num" href="#" onmouseover="showNow(3)">3</a>
-
-<a class="ad" name="num" href="#" onmouseover="showNow(4)">4</a>
-
-<a class="ad" name="num" href="#" onmouseover="showNow(5)">5</a>
-
-<a class="ad" name="num" href="#" onmouseover="showNow(6)">6</a>
-
-</div>
-
-<div class="btn">
-
-<a class="btn-left" id="left" href="void(0)">上一张< /a>
-
-<a class="btn-right" id="right" href="void(0)">下一张< /a>
-
-</div>
-
-</div>
-
-</body>
+    </body>
 
 </html>
------------------------------------
-©著作权归作者所有：来自51CTO博客作者chenhuixfyy的原创作品，请联系作者获取转载授权，否则将追究法律责任
-javascript版购物网站图片轮转带左右按钮切换 （兼容IE和FF）
-https://blog.51cto.com/chenhuixfyy/1030511 -->
