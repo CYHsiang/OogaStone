@@ -115,6 +115,9 @@ $(function ($) {
 
 $(document).ready(function () {
     $('#blowup_image').blowup({
-        scale: 1.5
+        scale: 2.5
     });
 })
+
+
+// ---------------選擇水晶輪播

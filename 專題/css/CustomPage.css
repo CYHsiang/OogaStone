@@ -30,7 +30,6 @@ body {
     display: block;
     text-decoration: none;
     width: 100px;
-    /* height: 40px; */
     text-align: center;
 }
 
@@ -41,9 +40,6 @@ body {
     box-shadow: 0px 10px 13px -7px #959595;
 }
 
-/* .navLeft li li:hover {
-    background-color:#979E8A;
-} */
 
 .navLeft li li {
     clear: left;
@@ -76,6 +72,7 @@ body {
 }
 
 .content {
+
     margin: 60px 70px 0;
     display: flex;
 }
@@ -104,7 +101,7 @@ body {
 }
 
 .title li {
-    font-size: 24px;
+    font-size: 20px;
     padding: 16px 24px;
     border: solid 1px #979E8A;
     display: inline-block;
@@ -119,7 +116,6 @@ body {
 
 /* --------content2 款式--------- */
 .content2 {
-    /* border: solid 1px red; */
     margin: 0 70px 70px;
     display: flex;
     justify-content: right;
@@ -148,10 +144,9 @@ body {
 }
 
 /* --------content2-crystal 水晶名--------- */
-/* .crystal {
-    border: solid 1px red;
+.crystal {
     margin: 70px 70px 0 140px;
-} */
+}
 
 .title2 {
     margin: auto;
@@ -160,7 +155,7 @@ body {
 }
 
 .title2 li {
-    font-size: 24px;
+    font-size: 20px;
     padding: 16px 24px;
     border: solid 1px #979E8A;
     display: inline-block;
@@ -188,6 +183,14 @@ body {
 .crystalName>img:nth-child(2) {
     float: right;
 }
+
+.crystalWrapper {
+    background-color: #959595;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+}
+
 /* 選擇水晶 上層 */
 .upper {
     width: 932px;
@@ -226,7 +229,7 @@ body {
     margin: auto;
 }
 
-/* < 選擇水晶 下層  */
+/* 選擇水晶 下層  */
 .lower {
     display: flex;
     justify-content: space-between;
@@ -359,3 +362,4 @@ hr {
 .footer-right img {
     margin-left: 30px;
 }
+

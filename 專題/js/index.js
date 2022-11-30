@@ -1,3 +1,8 @@
+//header滾動
+
+
+
+
 
 // 點擊折價券彈出視窗--popup
 function OpenModal() {
@@ -8,7 +13,6 @@ function CloseModal() {
     let element = document.getElementById('overlay')
     element.style.display = 'none'
 }
-
 
 // 折價券輪播-----------
 $(".responsive").slick({
@@ -30,8 +34,6 @@ $(".responsive").slick({
     ]
 });
 
-
-
 // 首頁動畫
 function showImg() {
     let logo2 = document.querySelector('.logo_logo');
@@ -52,6 +54,6 @@ function showLogo() {
     logo3.style.display = 'block';
     logo4.style.display = 'block';
     img.style.display = 'none';
-
 }
+
 
