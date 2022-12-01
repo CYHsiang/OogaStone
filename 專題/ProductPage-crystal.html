@@ -6,12 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ooga Stone</title>
-    <link rel="shortcut icon" href="./images/favicon.ico"/>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.css' /> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/StoryPage.css">
+    <link rel="stylesheet" href="./css/ProductPage.css">
+    <!-- <script src="./js/Product.js"></script> -->
 </head>
 
 <body>
@@ -56,23 +64,32 @@
     </div>
     <!--------------------content------------------>
     <div class="container">
-        <div class="content">
-            <div class="img">
-                <img src="./images/Story_img.jpg" alt="">
+        <div class="product">
+            <div class="item">
+                <div class="productImg">
+                    <img src="./images/Product/bracelet/4_1.jpg" alt="">
+                </div>
+                <h1>大海｜海藍寶 手鍊</h1>
+                <p>$290</p>
+                <img src="./images/add.svg" alt="">
+                <hr>
             </div>
-            <div class="text">
-                <img src="./images/Story_OogaStone.svg" alt="">
-                <h1>品牌介紹</h1>
-                <p>以水晶礦石為主體，<br>
-                    搭配各式黃銅材料進行創作，<br>
-                    多以耳環設計為主，<br>
-                    另也有販售手鍊、戒指與項鍊，<br>
-                    並提供客製化的服務，<br>
-                    每一個飾品皆為手工製作，<br>
-                    帶有復古元素，且風格極具特色。
-                </p>
-                <button class="btnShop">SHOP</button>
+            <div class="item">
+                <div class="productImg">
+                    <img src="./images/Product/1_1.jpg" alt="">
+                </div>
+                <h1>Waffle｜海藍寶 耳環 </h1>
+                <p>$290</p>
+                <img src="./images/add.svg" alt="">
+                <hr>
             </div>
+
+        </div>
+        <nav class="page">
+            <!-- <a style="color:#21402F" href="">1</a> -->
+        </nav>
+        <div class="gift">
+            <img src="./images/product_gift.svg" alt="">
         </div>
     </div>
     <!--------------------footer------------------>
@@ -89,6 +106,11 @@
             </ul>
         </nav>
     </div>
+
+
+    <!------------------script------------------>
+
 </body>
+
 
 </html>

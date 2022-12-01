@@ -2,6 +2,9 @@ body {
     margin: 0;
     background: #FDF1E8;
     font-family: 'Noto Serif TC', serif;
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* ------------------header----------------- */
@@ -14,6 +17,7 @@ body {
     padding: 0 70px;
     position: fixed;
     top: 0;
+    flex: 1;
 }
 
 .logo-small {
@@ -70,6 +74,7 @@ body {
     margin: 0 auto;
     width: 1236px;
     font-weight: bold;
+    flex: 1;
 }
 
 .product {
@@ -109,7 +114,7 @@ body {
 }
 
 .item hr {
-    border-top: 2px solid #959595;
+    border-top: 1px solid #979E8A;
     clear: both;
 }
 
@@ -123,16 +128,7 @@ body {
     font-size: 23px;
     text-decoration: none;
     padding: 0 10px;
-    /* color: #979E8A; */
 }
-
-/* .page a:focus {
-    color: #21402F;
-} */
-
-/* .page a:active {
-    color: #21402F;
-} */
 
 .gift {
     position: fixed;

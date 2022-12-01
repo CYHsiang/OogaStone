@@ -4,7 +4,6 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-/* border: solid 1px red; */
 /* ------------------header----------------- */
 .header {
     z-index: 9999;
@@ -14,6 +13,14 @@ body {
     display: flex;
     padding: 0 70px;
     position: fixed;
+
+    top: -100px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.sticky{
+    opacity: 1;
     top: 0;
 }
 
@@ -157,7 +164,8 @@ body {
 
 .banner {
     background-color: #FDF1E8;
-    padding: 100px;
+    padding: 80px 100px;
+    padding-bottom: 120px;
 }
 
 .text-left {
@@ -186,6 +194,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
+    padding-left: 27px;
 }
 
 .icon-logo .logo_ellipse {
@@ -230,32 +239,22 @@ body {
 }
 
 .link {
-    display: inline-block;
+    float: left;
+    padding-top: 20px;
 }
 
 .link img {
     margin-right: 30px;
 }
 
-.bottom-text {
-    float: right;
-}
-
-.bottom-text h3 {
-    font-size: 28px;
-    font-weight: bolder;
-    color: #21402F;
-    padding-right: 50px;
-}
-
-.bottom-arrow img {
+.bottom-arrow1 a {
     float: right;
 }
 
 /* ------------------banner2----------------- */
 .banner2 {
     background-color: #FDF1E8;
-    padding: 70px 0;
+    padding: 120px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -344,7 +343,7 @@ body {
 /* ------------------banner3----------------- */
 .banner3 {
     background-color: #FDF1E8;
-    margin: 70px 0;
+    margin-bottom: 70px;
     padding: 70px 0;
     display: flex;
     justify-content: space-between;
@@ -355,7 +354,6 @@ body {
 }
 
 .title3 p {
-
     font-size: 28px;
     color: #21402F;
     line-height: 60px;
@@ -402,34 +400,24 @@ body {
 /* ------------------banner4----------------- */
 .banner4 {
     background-color: #FDF1E8;
-    margin-bottom: 70px;
     padding-bottom: 100px;
-    /* padding: 70px 0; */
-    /* margin: 70px 0; */
-    /* border: 1px solid red; */
+    margin: 70px 0;
 }
 
-.title4 {
+.bottom-arrow2 a{
     float: right;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 60px;
-    margin-bottom: 50px;
+    padding-right: 50px;
+    z-index: 999;
+    position: relative;
 }
 
 .title4 h1 {
     font-weight: bold;
     color: #21402F;
     font-size: 48px;
-}
-
-.bottom-text4 h2 {
-    font-weight: bold;
-    color: #21402F;
-    font-size: 32px;
-    padding-right: 50px;
-    margin-bottom: 20px;
+    float: left;
+    margin-left: 110px;
+    margin-bottom: 80px;
 }
 
 .product {
@@ -461,6 +449,25 @@ body {
     display: block;
 }
 
+.productItem a {
+    margin-top: 250px;
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+.earing a {
+    background-image: url("../images/Index_earing.jpg");
+}
+.necklace a {
+    background-image: url("../images/Index_necklace.jpg");
+}
+.ring a {
+    background-image: url("../images/Index_ring.jpg");
+}
+.bracelet a {
+    background-image: url("../images/Index_bracelet.jpg");
+}
+
 .mask {
     width: 250px;
     height: 250px;
@@ -473,6 +480,9 @@ body {
     background-color: #979e8a3b;
     backdrop-filter: blur(5px);
 }
+
+
+
 
 .item :hover {
     display: none;
