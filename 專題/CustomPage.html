@@ -12,27 +12,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     
-    
+    <!-- 選擇水晶輪播 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    
+    <!-- 放大鏡效果 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- 輪播 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-    
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="./js/blowup.js"></script> -->
     <script src="./js/Custom.js"></script>
+    
     <link rel="stylesheet" href="./css/CustomPage.css">
 
-
 </head>
+<script>
+    // 選擇水晶輪播
+    $(function () {
+        $(".sliderRow").slick({
+            rows: 2,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true, // 預設 false 指示点
+        });
+
+        $('.sliderTwo').slick({
+            rows: 2,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true, // 預設 false 指示点
+        });
+
+    });
+    function slickGoTo(key) {
+        $('.slider-nav').slick('slickGoTo', key);
+    }
+</script>
 
 <body>
     <!--------------------header區------------------>
-    <div class="header col-12">
+    <div class="header">
         <div class="logo-small">
             <a href="./index.html"><img src="./images/Header_smallgreen.svg" alt="Ooga Stone"></a>
         </div>
@@ -79,21 +102,28 @@
             <div class="title">
                 <p><strong>客製化</strong>屬於自己的耳環</p>
                 <ul>
-                    <li><a href="#">1.選擇款式</a></li>
-                    <li><a href="#">2.選擇水晶</a></li>
-                    <li><a href="#">3.加入購物車</a></li>
+                    <li>1.選擇款式</li>
+                    <li>2.選擇水晶</li>
+                    <li>3.加入購物車</li>
                 </ul>
             </div>
         </div>
         <div class="content2">
             <div class="shape">
-                <img src="./images/Custom_long_white.png" alt="">
+                <img src="./images/Custom_long_white.png">
+                <div class="shapeTxt">
+                    <h2>長鏈</h2>
+                </div>
                 <p>#氣質浪漫</p>
             </div>
             <div class="shape">
-                <img src="./images/Custom_short_white.png" alt="">
+                <img src="./images/Custom_short_white.png">
+                <div class="shapeTxt">
+                    <h2>短鏈</h2>
+                </div>
                 <p>#俏皮可愛</p>
             </div>
+
             <div class="myOwn">
                 <img src="./images/My Own.svg" alt="">
             </div>
@@ -104,111 +134,190 @@
         <div class="crystal">
             <div class="title2">
                 <ul>
-                    <li><a href="#">1.選擇款式</a></li>
-                    <li><a href="#">2.選擇水晶</a></li>
-                    <li><a href="#">3.加入購物車</a></li>
+                    <li>1.選擇款式</li>
+                    <li>2.選擇水晶</li>
+                    <li>3.加入購物車</li>
                 </ul>
             </div>
         </div>
         <div class="crystalName">
-
-            <img src="./images/Custom_prev.svg" alt="">
-
-
-            <img src="./images/Custom_next.svg" alt="">
-
-            <div class="crystalWrapper">
-            
-                <div class="upper">
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>黃水晶</h2>
+            <div class="sliderTwo">
+                <!-- 第一頁 -->
+                <div>
+                    <div class="d-flex upper">
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-1.png">
+                                <div class="crystalTxt">
+                                    <h2>黃水晶</h2>
+                                </div>
+                            </div>
+                            
                         </div>
-                    </div>
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>白水晶</h2>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-2.png">
+                                <div class="crystalTxt">
+                                    <h2>白水晶</h2>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>虎眼石</h2>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-3.png">
+                                <div class="crystalTxt">
+                                    <h2>虎眼石</h2>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>茶晶</h2>
-                        </div>
-                    </div>
-                </div>
-              
-                <div class="lower">
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>海藍寶</h2>
-                        </div>
-                    </div>
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>金髮晶</h2>
-                        </div>
-                    </div>
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>紅瑪瑙</h2>
-                        </div>
-                    </div>
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>紫水晶</h2>
-                        </div>
-                    </div>
-                    <div class="crystalUp">
-                        <img src="./images/Custom_Cystal1.png">
-                        <div class="crystalTxt">
-                            <h2>粉晶</h2>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-4.png">
+                                <div class="crystalTxt">
+                                    <h2>茶晶</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <!--第一頁下層 -->
+                <div>
+                    <div class="d-flex lower">
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-5.png">
+                                <div class="crystalTxt">
+                                    <h2>海藍寶</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-6.png">
+                                <div class="crystalTxt">
+                                    <h2>金髮晶</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-7.png">
+                                <div class="crystalTxt">
+                                    <h2>紅瑪瑙</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-8.png">
+                                <div class="crystalTxt">
+                                    <h2>紫水晶</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-9.png">
+                                <div class="crystalTxt">
+                                    <h2>粉晶</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二頁 -->
+                <div>
+                    <div class="d-flex upper">
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-10.png">
+                                <div class="crystalTxt">
+                                    <h2>月光石</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm ">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-11.png">
+                                <div class="crystalTxt">
+                                    <h2>青金石</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-12.png">
+                                <div class="crystalTxt">
+                                    <h2>拉長石</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-13.png">
+                                <div class="crystalTxt">
+                                    <h2>葡萄石</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第二頁下層 -->
+                <div>
+                    <div class="d-flex lower">
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-14.png">
+                                <div class="crystalTxt">
+                                    <h2>石榴石</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-15.png">
+                                <div class="crystalTxt">
+                                    <h2>螢石</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-16.png">
+                                <div class="crystalTxt">
+                                    <h2>藍虎眼</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-17.png">
+                                <div class="crystalTxt">
+                                    <h2>藍紋瑪瑙</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="crystalUp">
+                                <img src="./images/crystal/crystal-18.png">
+                                <div class="crystalTxt">
+                                    <h2>黑曜石</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
-
-
         </div>
 
         <hr color=#979E8A size=1 align=center width=90%>
 
         <div class="cart">
-            <div class="title2">
+            <div class="title3">
                 <ul>
-                    <li><a href="#">1.選擇款式</a></li>
-                    <li><a href="#">2.選擇水晶</a></li>
-                    <li><a href="#">3.加入購物車</a></li>
+                    <li>1.選擇款式</li>
+                    <li>2.選擇水晶</li>
+                    <li>3.加入購物車</li>
                 </ul>
             </div>
         </div>
@@ -237,17 +346,17 @@
                 <div class="quantity">
                     <p>數量</p>
                     <div class="AddSub">
-                        <img src="./images/Addsmall.svg" alt="">
-                        <p>1</p>
                         <img src="./images/Subsmall.svg" alt="">
+                        <p>1</p>
+                        <img src="./images/Addsmall.svg" alt="">
                     </div>
                 </div>
                 <div class="addShop">
                     <div class="add">
-                        <h2>加入購物車</h2>
+                        <p>加入購物車</p>
                     </div>
                     <div class="shop">
-                        <h2>直接購買</h2>
+                        <p>直接購買</p>
                     </div>
                 </div>
             </div>

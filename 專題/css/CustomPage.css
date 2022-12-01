@@ -5,7 +5,6 @@ body {
 }
 
 /* ------------------header----------------- */
-/* border: solid 1px red; */
 .header {
     z-index: 9999;
     position: relative;
@@ -15,7 +14,6 @@ body {
     padding: 0 70px;
     position: fixed;
     top: 0;
-    right: 0;
 }
 
 .logo-small {
@@ -34,13 +32,13 @@ body {
     text-align: center;
 }
 
+/* 第二層 */
 .navLeft ul ul {
     background-color: #FDF1E8;
     position: absolute;
     display: none;
     box-shadow: 0px 10px 13px -7px #959595;
 }
-
 
 .navLeft li li {
     clear: left;
@@ -50,7 +48,6 @@ body {
     color: #21402F;
     text-decoration: none;
     line-height: 60px;
-    /* margin: 0 10px; */
 }
 
 .navLeft li:hover ul {
@@ -67,7 +64,6 @@ body {
 }
 
 /* ------------------content---------------- */
-
 .main {
     background-color: #FDF1E8;
     margin: 0 auto;
@@ -109,11 +105,12 @@ body {
     display: inline-block;
     border-radius: 30px;
     margin: 0 20px;
+    color: #21402F;
 }
 
-.title a {
-    color: #21402F;
-    text-decoration: none;
+.title li:nth-child(1) {
+    background-color: #21402F;
+    color: #FDF1E8;
 }
 
 /* --------content2 款式--------- */
@@ -124,9 +121,8 @@ body {
 }
 
 .shape {
-    width: 300px;
-    display: inline-block;
     margin-left: 60px;
+    position: relative;
 }
 
 .shape p {
@@ -139,6 +135,32 @@ body {
 .shape img {
     width: 300px;
     height: 300px;
+}
+
+.shapeTxt {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: #979e8a81;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 1s;
+    backdrop-filter: blur(5px);
+    color:#fff;
+}
+.shapeTxt h2{
+    font-size: 36px;
+}
+
+.shape:hover .shapeTxt {
+    opacity: 0;
 }
 
 .myOwn img {
@@ -163,42 +185,25 @@ body {
     display: inline-block;
     border-radius: 30px;
     margin: 0 20px;
+    color: #21402F;
 }
 
-.title2 a {
-    color: #21402F;
-    text-decoration: none;
+.title2 li:nth-child(2) {
+    background-color: #21402F;
+    color: #FDF1E8;
 }
 
 /* ----------------選擇水晶---------------- */
+
 .crystalName {
     margin: auto;
     width: 1270px;
     height: 500px;
 }
 
-.crystalName>img {
-    float: left;
-    margin-top: 170px;
-}
-
-.crystalName>img:nth-child(2) {
-    float: right;
-}
-
-.crystalWrapper {
-    background-color: #959595;
-    width: 90%;
-    margin: auto;
-}
-
-/* 選擇水晶 上層 */
 .upper {
-    width: 932px;
-    height: 218px;
+    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .crystalUp {
@@ -230,16 +235,32 @@ body {
     margin: auto;
 }
 
-/* 選擇水晶 下層  */
-.lower {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 /* --------content2-cart--------- */
 .cart {
     margin: 70px 70px 0 140px;
+}
+
+.title3 {
+    margin: auto;
+    width: 725px;
+    margin-bottom: 60px;
+}
+
+.title3 li {
+    font-size: 20px;
+    padding: 16px 24px;
+    border: solid 1px #979E8A;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 0 20px;
+    color: #21402F;
+}
+
+.title3 li:nth-child(3) {
+    background-color: #21402F;
+    color: #FDF1E8;
 }
 
 .Product {
@@ -306,18 +327,19 @@ hr {
 }
 
 .AddSub img {
-    padding: 5px 0;
-    height: 13px;
+    padding: 10px 0 0 0;
+    height: 22px;
 }
 
 .addShop {
     margin: auto;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .add,
 .shop {
-    font-size: 20px;
+    box-sizing: content-box;
+    font-size: 16px;
     width: 175px;
     height: 50px;
     text-align: center;
@@ -363,4 +385,3 @@ hr {
 .footer-right img {
     margin-left: 30px;
 }
-
