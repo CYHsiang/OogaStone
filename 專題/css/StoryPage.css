@@ -2,6 +2,10 @@ body {
     margin: 0;
     background: #FDF1E8;
     font-family: 'Noto Serif TC', serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* ------------------header----------------- */
@@ -14,6 +18,7 @@ body {
     padding: 0 70px;
     position: fixed;
     top: 0;
+    flex: 1;
 }
 
 .logo-small {
@@ -83,6 +88,7 @@ body {
 .container {
     margin: 0 auto;
     width: 1440px;
+    flex: 1;
 }
 
 .content {
