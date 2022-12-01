@@ -6,8 +6,7 @@ function onplus() {
             var amountEles = document.querySelectorAll('.AddSub .number')
             amountEles.value++
            
-            
-
+        
             // 計算價格
             var priceEle = document.querySelectorAll('.price span')
             var price = priceEle.innerHTML

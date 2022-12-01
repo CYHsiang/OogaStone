@@ -1,7 +1,7 @@
 //放大鏡功能
 /**
  * blowup.js
- * Paul Krishnamurthy 2016
+ * Paul Krishnamurthy 2016專題/js/Custom.js
  *
  * https://paulkr.com
  * paul@paulkr.com
@@ -9,9 +9,7 @@
 
 $(function ($) {
     $.fn.blowup = function (attributes) {
-
         var $element = this;
-
         // If the target element is not an image
         if (!$element.is("img")) {
             console.log("%c Blowup.js Error: " + "%cTarget element is not an image.",
@@ -19,7 +17,6 @@ $(function ($) {
                 "background: #FCEBB6; color: #F07818; font-size: 17px;");
             return;
         }
-
         // Constants
         var $IMAGE_URL = $element.attr("src");
         var NATIVE_IMG = new Image();
@@ -38,7 +35,6 @@ $(function ($) {
             scale: 1,
             // customClasses: ""
         }
-
         // Update defaults with custom attributes
         var $options = $.extend(defaults, attributes);
 
@@ -115,9 +111,6 @@ $(function ($) {
 
 $(document).ready(function () {
     $('#blowup_image').blowup({
-        scale: 2.5
+        scale: 1.5
     });
 })
-
-
-// ---------------選擇水晶輪播
