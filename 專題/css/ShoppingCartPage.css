@@ -123,7 +123,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+   }
 
 .L1>img {
     width: 120px;
@@ -135,10 +135,12 @@ body {
     text-align: center;
     width: 120px;
     height: 125px;
-}
+   }
 
 .input-group {
     display: flex;
+    width: 120px;
+    justify-content: center;
 }
 
 .input-group button {
@@ -146,19 +148,18 @@ body {
     border: none;
     font-size: 20px;
     color: #21402F;
-}
+ }
 
-#down {
+/* #down {
     margin-bottom: 10px;
     text-align: center;
-}
+} */
 
 .value {
     text-align: center;
     width: 40px;
     background-color: #FDF1E8;
     border: #FDF1E8;
-
 }
 
 /*金額-----------------*/

@@ -1,9 +1,9 @@
 
-function changeMBTI() {
-    // document.getElementById('MBTI').parentNode.style.background = '#21402F';
-    document.getElementById('MBTI').style.background = '#21402F';
-    document.getElementById('MBTI').style.color = '#FDF1E8';
-}
+// function changeMBTI() {
+//     // document.getElementById('MBTI').parentNode.style.background = '#21402F';
+//     document.getElementById('MBTI').style.background = '#21402F';
+//     document.getElementById('MBTI').style.color = '#FDF1E8';
+// }
 
 // 點選 MBTI 改變內容------------------------
 function INTJ() {

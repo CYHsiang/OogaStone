@@ -473,29 +473,15 @@ body {
 }
 
 .productItem a {
-    margin-top: 250px;
+   top: 0;
     width: 250px;
     height: 250px;
     display: block;
+    position: absolute;
 }
 
-.earing a {
-    background-image: url("../images/Index_earing.jpg");
-}
-
-.necklace a {
-    background-image: url("../images/Index_necklace.jpg");
-}
-
-.ring a {
-    background-image: url("../images/Index_ring.jpg");
-}
-
-.bracelet a {
-    background-image: url("../images/Index_bracelet.jpg");
-}
-
-.mask {
+.item .mask
+{
     width: 250px;
     height: 250px;
     position: absolute;
@@ -506,21 +492,17 @@ body {
     color: white;
     background-color: #979e8a3b;
     backdrop-filter: blur(5px);
+    top: 50px;
 }
-
-
 
 
 .item :hover {
-    display: none;
+   opacity: 0;
 }
-
-
 
 .productItem:nth-child(odd) {
     margin-top: 70px;
 }
-
 
 
 
