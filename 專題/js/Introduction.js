@@ -1,8 +1,10 @@
 
 function changeMBTI() {
-    document.getElementById('MBTI').parentNode.style.background = '#21402F';
+    // document.getElementById('MBTI').parentNode.style.background = '#21402F';
+    document.getElementById('MBTI').style.background = '#21402F';
     document.getElementById('MBTI').style.color = '#FDF1E8';
 }
+
 // 點選 MBTI 改變內容------------------------
 function INTJ() {
     var elem = document.getElementById('text');
@@ -388,8 +390,8 @@ function Aquamarine() {
 function Agate() {
     var elem = document.getElementById('text');
     var img = document.getElementById('mbtiImg');
-    elem.innerHTML = '<h2>' + "瑪瑙" + '</h2>' +
-        '<h2>' + "Agate" + '</h2>' +
+    elem.innerHTML = '<h2>' + "瑪瑙 Agate" + '</h2>' +
+        
         '<p>' + "又稱海水和玉髓類一樣是石英的一種藍寶，屬綠柱石家族的一員" + '</p>' +
         '<p>' + "◆紅瑪瑙：激發熱情、排除負能量、改善內分泌、加強血液循環、消除疲勞和壓力、避邪" + '</p>' +
         '<p>' + "◆ 藍紋瑪瑙：使內心平靜、增強表達能力、消除疲勞和壓力、避邪服力、改善呼吸系統、助冷靜、安定思緒" + '</p>' +
@@ -538,9 +540,7 @@ function Tigerseye() {
         '</br>' +
         '<p>' + "又稱虎睛石，是木化石的一種，屬於石英家族的一員。" + '</p>' +
         '<h4>' + "外觀：具有貓眼效果，帶有仿絲質的光紋。" + '</h4>' +
-        '<h4>' + "功效:" + '</h4>' +
-        '<p>' + "◆ 黃虎眼：招財、積極進取、提高注意力" + '</p>' +
-        '<p>' + "◆ 藍虎眼：軟化固執、積極進取、提升洞察力" + '</p>' +
+        '<h4>' + "功效:" + '<br>'  + "◆ 黃虎眼：招財、積極進取、提高注意力" +'<br>' +"◆ 藍虎眼：軟化固執、積極進取、提升洞察力" + '</h4>' +
         '<a href="#">SHOP</a>';
     img.src = "images/Product/17_1.jpg";
 }
