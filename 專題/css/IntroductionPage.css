@@ -14,6 +14,7 @@ body {
     padding: 0 70px;
     position: fixed;
     top: 0;
+    height: 60px;
 }
 
 .logo-small {
@@ -53,6 +54,26 @@ body {
 
 .navLeft li:hover ul {
     display: block;
+}
+
+.navLeft a {
+    position: relative;
+}
+
+.navLeft a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #979E8A;
+    transition: 0.4s;
+    z-index: 999;
+    transform: scale(0);
+}
+
+.navLeft a:hover:after {
+    transform: scaleX(1);
 }
 
 .nav-right {
@@ -192,6 +213,10 @@ body {
     position: absolute;
     bottom: 0px;
     left: 0;
+}
+
+.text a:hover {
+    background-color: #979E8A;
 }
 
 .content2 img {
@@ -381,7 +406,8 @@ body {
     color: #21402F;
     background-image: url(../images/popup_line.svg);
 }
-.popupTitle :nth-child(2){
+
+.popupTitle :nth-child(2) {
     background-repeat: no-repeat;
     border: #21402F;
     color: #FDF1E8;
@@ -396,7 +422,7 @@ body {
 }
 
 .slider {
-   margin: 50px;
+    margin: 50px;
 }
 
 .popupText {
@@ -430,6 +456,7 @@ body {
     margin-top: 20px;
     margin-left: 30px;
 }
+
 /* 
 .popupText :nth-child(5) :active{
     color: #21402F;
