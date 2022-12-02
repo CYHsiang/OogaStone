@@ -14,7 +14,6 @@ body {
     padding: 0 70px;
     position: fixed;
     top: 0;
-    height: 60px;
 }
 
 .logo-small {
@@ -56,26 +55,6 @@ body {
     display: block;
 }
 
-.navLeft a {
-    position: relative;
-}
-
-.navLeft a:after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    border-bottom: 2px solid #979E8A;
-    transition: 0.4s;
-    z-index: 999;
-    transform: scale(0);
-}
-
-.navLeft a:hover:after {
-    transform: scaleX(1);
-}
-
 .nav-right {
     margin-left: auto;
 }
@@ -106,6 +85,8 @@ body {
     color: #21402F;
     display: inline-block;
 }
+
+
 
 
 .content1 li {
@@ -194,6 +175,7 @@ body {
     color: #21402F;
     font-size: 20px;
     margin-bottom: 20px;
+    line-height: 28px;
 }
 
 .text p {
@@ -282,7 +264,7 @@ body {
 
 /* --------content4--------- */
 .content4 {
-    margin: 0 70px;
+    margin: 10px 70px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -297,7 +279,7 @@ body {
 .item {
     width: 270px;
     height: 270px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,45 +292,31 @@ body {
     /* display: block; */
 }
 
-.pink,
-.green,
-.blue,
-.yellow {
+.starSign {
+    border: 10px solid #21402F;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 270px;
     height: 270px;
-    background-color: #E8D9E0;
+    background-color: white;
 }
 
-.green {
-    background-color: #DCEDDC;
-}
-
-.blue {
-    background-color: #CBE7EA;
-}
-
-.yellow {
-    background-color: #F7E7CD;
+.mask:hover {
+    opacity: 0;
 }
 
 .mask {
     width: 270px;
-    height: 130px;
+    height: 270px;
     position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.31);
     text-align: center;
     font-size: 36px;
-    line-height: 60px;
-    padding: 70px 0;
+    line-height: 270px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.31);
 }
 
-.mask:hover  {
-    opacity: 0;
-}
 
 
 /* ------------------footer----------------- */
