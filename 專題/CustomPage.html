@@ -28,30 +28,21 @@
     <link rel="stylesheet" href="./js/jquery-3.6.0.js">
     <script src="./js/Custom.js"></script>
 
-
     <link rel="stylesheet" href="./css/CustomPage.css">
 
 </head>
 <script>
     // 選擇水晶輪播
     $(function () {
-        $(".sliderRow").slick({
-            rows: 2,
-            infinite: false,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: true, // 預設 false 指示点
-        });
-
         $('.sliderTwo').slick({
             rows: 2,
             infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: true, // 預設 false 指示点
+            dots: true,
         });
-
     });
+
     function slickGoTo(key) {
         $('.slider-nav').slick('slickGoTo', key);
     }

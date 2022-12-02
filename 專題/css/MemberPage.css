@@ -20,18 +20,6 @@ body {
     padding: 15px 10px 0 0;
 }
 
-/* .navLeft{
-    height: 60px;
-    border: 1px solid red;
-    overflow: hidden;
-    width: 480px;
-    margin: 0 auto;
-} */
-/* .navLeft ul {
-    margin: 0;
-    padding: 0;
-} */
-
 .navLeft li {
     float: left;
     list-style: none;
@@ -41,7 +29,6 @@ body {
     display: block;
     text-decoration: none;
     width: 100px;
-    /* height: 40px; */
     text-align: center;
 }
 
@@ -52,10 +39,6 @@ body {
     box-shadow: 0px 10px 13px -7px #959595;
 }
 
-/* .navLeft li li:hover {
-    background-color:#979E8A;
-} */
-
 .navLeft li li {
     clear: left;
 }
@@ -64,7 +47,6 @@ body {
     color: #21402F;
     text-decoration: none;
     line-height: 60px;
-    /* margin: 0 10px; */
 }
 
 .navLeft li:hover ul {
@@ -79,6 +61,7 @@ body {
     margin-top: 15px;
     margin-right: 30px;
 }
+
 /* ------------------content----------------- */
 .container {
     margin: 0 auto;
@@ -92,7 +75,6 @@ body {
     height: 480px;
     margin: auto;
     margin: 147px auto;
-
 }
 
 .login h1,

@@ -20,8 +20,6 @@ body {
     padding: 15px 10px 0 0;
 }
 
-
-
 .navLeft li {
     float: left;
     list-style: none;
@@ -31,7 +29,6 @@ body {
     display: block;
     text-decoration: none;
     width: 100px;
-    /* height: 40px; */
     text-align: center;
 }
 
@@ -40,7 +37,6 @@ body {
     position: absolute;
     display: none;
     box-shadow: 0px 10px 13px -7px #959595;
-
 }
 
 .navLeft li li {
@@ -70,7 +66,7 @@ body {
 .container {
     margin: 60px auto 0;
     width: 1440px;
-    height: 742px;
+    height: 775px;
 }
 
 .content {
@@ -79,12 +75,10 @@ body {
     height: 742px;
 }
 
-
 /* project----------------- */
 .project {
     margin-top: 100px;
     width: 1200px;
-  
 }
 
 .project ul {
@@ -113,7 +107,6 @@ body {
 .L1>img {
     width: 120px;
     height: 120px;
-
 }
 
 .L1 p {
@@ -121,20 +114,31 @@ body {
     text-align: center;
     width: 120px;
     height: 125px;
-
 }
 
-.AddSub {
-    align-items: center;
-    width: 120px;
+.input-group {
     display: flex;
-    justify-content: space-around;
 }
 
-.AddSub img {
-    height: 13px;
+.input-group button {
+    background-color: #FDF1E8;
+    border: none;
+    font-size: 20px;
+    color: #21402F;
 }
 
+#down {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.value {
+    text-align: center;
+    width: 40px;
+    background-color: #FDF1E8;
+    border: #FDF1E8;
+
+}
 
 /*金額-----------------*/
 .subtotal {
@@ -154,7 +158,6 @@ body {
     display: flex;
     justify-content: end;
     margin: 20px 0;
-
 }
 
 .freight p {
@@ -164,11 +167,11 @@ body {
     color: #21402F;
 }
 
+
 .total {
     display: flex;
     justify-content: end;
     margin: 20px 0;
-
 }
 
 .total p {
@@ -179,7 +182,7 @@ body {
     font-size: 20px;
 }
 
-button {
+.money>button {
     float: right;
     width: 240px;
     height: 50px;
@@ -191,7 +194,8 @@ button {
     margin: 20px 0;
     border: 1px solid #21402F;
 }
-button:hover{
+
+.money>button:hover {
     background-color: #979E8A;
     border: #979E8A;
 }
