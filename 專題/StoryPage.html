@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/StoryPage.css">
+    
+    <!-- aos動畫套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -58,11 +62,13 @@
     <div class="container">
         <div class="content">
             <div class="img">
-                <img src="./images/Story_img.jpg" alt="">
+                <img src="./images/Story_img.jpg" alt=""  data-aos="fade-right" data-aos-duration="2000">
             </div>
-            <div class="text">
+            <div class="text"  data-aos="fade-left" data-aos-duration="2000">
                 <img src="./images/Story_OogaStone.svg" alt="">
-                <h1>品牌介紹</h1>
+                <div class="title">
+                    <img src="./images/Story_logo.svg" alt=""><h1>品牌介紹</h1>
+                </div>
                 <p>以水晶礦石為主體，<br>
                     搭配各式黃銅材料進行創作，<br>
                     多以耳環設計為主，<br>
@@ -71,7 +77,8 @@
                     每一個飾品皆為手工製作，<br>
                     帶有復古元素，且風格極具特色。
                 </p>
-                <button class="btnShop">SHOP</button>
+                <a href="ProductPage-1.html"><button class="btnShop">SHOP</button>
+                </a>
             </div>
         </div>
     </div>
@@ -89,6 +96,12 @@
             </ul>
         </nav>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

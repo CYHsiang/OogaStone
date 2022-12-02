@@ -12,7 +12,7 @@ function INTJ() {
         '<p>' + "內斂冷靜，擅長思考與推理，夠站在與眾不同的視角觀察事物。而且對知識有著敏銳直覺及獨特的見解，經常沉醉在自己的世界中思考，往往會很容易忽略別人及現實生活，因此會讓人有一種疏遠的感覺，同時對新環境與人亦比較缺乏安全感，想與INTJ成為朋友，需要長時間建立關係及信任，他們偏好跟有共同話題及擁有豐富知識的人交流。" + '</p>' +
         '<h4>' + "適合的水晶：海藍寶" + '</h4>' +
         '<p>' + "海藍寶能提升語言與溝通能力，同時也是愛與和平的象徵，有助於不善表達情感的INTJ更樂於展現自我，收斂鋒芒變得更加柔和。" + '</p>' +
-        '<a href="#">SHOP</a>';
+        '<a href="ProductPage-crystal.html">SHOP</a>';
     img.src = "images/Product/1_1.jpg";
 }
 
@@ -265,7 +265,7 @@ function May() {
         '</br>' +
         '</br>' +
         '<h4>' + "適合的水晶：海藍寶" + '</h4>' +
-        '<a href="#">SHOP</a>';
+        '<a href="ProductPage-crystal.html">SHOP</a>';
     img.src = "images/Product/1_1.jpg";
 }
 
@@ -381,7 +381,7 @@ function Aquamarine() {
         '<p>' + "又稱海水藍寶，屬綠柱石家族的一員" + '</p>' +
         '<h4>' + "外觀：透明而帶著藍色或海藍色的寶石" + '</h4>' +
         '<h4>' + "功效：增強表達與說服力、改善呼吸系統、助冷靜、安定思緒" + '</h4>' +
-        '<a href="#">SHOP</a>';
+        '<a href="ProductPage-crystal.html">SHOP</a>';
     img.src = "images/Product/bracelet/4_1.jpg";
 }
 
