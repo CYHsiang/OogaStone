@@ -17,9 +17,11 @@ body {
     top: -100px;
     opacity: 0;
     transition: all 0.3s;
+
+    height: 60px;
 }
 
-.sticky{
+.sticky {
     opacity: 1;
     top: 0;
 }
@@ -59,6 +61,27 @@ body {
 
 .navLeft li:hover ul {
     display: block;
+}
+
+
+.navLeft a {
+    position: relative;
+}
+
+.navLeft a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #979E8A;
+    transition: 0.4s;
+    z-index: 999;
+    transform: scale(0);
+}
+
+.navLeft a:hover:after {
+    transform: scaleX(1);
 }
 
 .nav-right {
@@ -321,6 +344,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 400;
+
 }
 
 .start a:hover {
@@ -330,7 +354,6 @@ body {
     background-image: url('../images/Index_start-hover.svg');
     background-repeat: no-repeat;
     background-position: 50%;
-
 }
 
 .Design {
@@ -404,7 +427,7 @@ body {
     margin: 70px 0;
 }
 
-.bottom-arrow2 a{
+.bottom-arrow2 a {
     float: right;
     padding-right: 50px;
     z-index: 999;
@@ -455,15 +478,19 @@ body {
     height: 250px;
     display: block;
 }
+
 .earing a {
     background-image: url("../images/Index_earing.jpg");
 }
+
 .necklace a {
     background-image: url("../images/Index_necklace.jpg");
 }
+
 .ring a {
     background-image: url("../images/Index_ring.jpg");
 }
+
 .bracelet a {
     background-image: url("../images/Index_bracelet.jpg");
 }
