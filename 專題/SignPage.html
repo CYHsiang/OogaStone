@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ooga Stone</title>
-    <link rel="shortcut icon" href="./images/favicon.ico"/>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/IntroductionPage.css">
+    <link rel="stylesheet" href="./css/SignPage.css">
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/Introduction.js"></script>
 </head>
+
 <script>
-    $(function(){
-       var mask = $('.mask');
-           // 當超連結的按鈕被左鍵一下時
-          mask.on('click', function () {
-               // 捲動到最上面的位置（scrollTop:0）
-               $('html,body').animate({ scrollTop: '0' }, 500);
-           });
-   })
-   
-   </script>
+ $(function(){
+    var mask = $('.mask');
+        // 當超連結的按鈕被左鍵一下時
+       mask.on('click', function () {
+            // 捲動到最上面的位置（scrollTop:0）
+            $('html,body').animate({ scrollTop: '0' }, 500);
+        });
+})
+
+</script>
+
 <body>
     <!--------------------header------------------>
     <div class="header">
@@ -113,26 +115,26 @@
                         <!-- 第二層結束 -->
                     </li>
                     <li><a href=""> 所有水晶 <img src="./images/submenu.svg" alt="">
-                        <!-- 第二層開始 -->
-                        <ul>
-                            <li onclick="Aquamarine();"><a href="#">海藍寶</a></li>
-                            <li onclick="Agate();"><a href="#">瑪瑙</a></li>
-                            <li onclick="Amethyst();"><a href="#">紫水晶</a></li>
-                            <li onclick="Citrine();"><a href="#">黃水晶</a></li>
-                            <li onclick="Moonstone();"><a href="#">月光石</a></li>
-                            <li onclick="Obsidian();"><a href="#">黑曜石</a></li>
-                            <li onclick="Smokyquartz();"><a href="#">茶晶</a></li>
-                            <li onclick="Labradorite();"><a href="#">拉長石</a></li>
-                            <li onclick="Rosequartz();"><a href="#">粉晶</a></li>
-                            <li onclick="Prehnite();"><a href="#">葡萄石</a></li>
-                            <li onclick="Lapislazuli();"><a href="#">青金石</a></li>
-                            <li onclick="Rutilatedquartz();"><a href="#">金髮晶</a></li>
-                            <li onclick="Tigerseye();"><a href="#">虎眼石</a></li>
-                            <li onclick="Garnet();"><a href="#">石榴石</a></li>
-                            <li onclick="Rockcrystal();"><a href="#">白水晶</a></li>
-                            <li onclick="Fluorite();"><a href="#">瑩石</a></li>
-                        </ul>
-                        <!-- 第二層結束 -->
+                            <!-- 第二層開始 -->
+                            <ul>
+                                <li onclick="Aquamarine();"><a href="#">海藍寶</a></li>
+                                <li onclick="Agate();"><a href="#">瑪瑙</a></li>
+                                <li onclick="Amethyst();"><a href="#">紫水晶</a></li>
+                                <li onclick="Citrine();"><a href="#">黃水晶</a></li>
+                                <li onclick="Moonstone();"><a href="#">月光石</a></li>
+                                <li onclick="Obsidian();"><a href="#">黑曜石</a></li>
+                                <li onclick="Smokyquartz();"><a href="#">茶晶</a></li>
+                                <li onclick="Labradorite();"><a href="#">拉長石</a></li>
+                                <li onclick="Rosequartz();"><a href="#">粉晶</a></li>
+                                <li onclick="Prehnite();"><a href="#">葡萄石</a></li>
+                                <li onclick="Lapislazuli();"><a href="#">青金石</a></li>
+                                <li onclick="Rutilatedquartz();"><a href="#">金髮晶</a></li>
+                                <li onclick="Tigerseye();"><a href="#">虎眼石</a></li>
+                                <li onclick="Garnet();"><a href="#">石榴石</a></li>
+                                <li onclick="Rockcrystal();"><a href="#">白水晶</a></li>
+                                <li onclick="Fluorite();"><a href="#">瑩石</a></li>
+                            </ul>
+                            <!-- 第二層結束 -->
                     </li>
                 </ul>
             </nav>
@@ -148,7 +150,7 @@
                 <p>適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因，適合該水晶的原因。</p>
                 <a href="#">SHOP</a>
             </div>
-            <img id="mbtiImg" src="images/Product/18_1.jpg">
+            <img id="mbtiImg" src="./images/Product/1_1.jpg">
         </div>
 
         <!-----------------content3---------------------->
@@ -161,152 +163,106 @@
         </div>
 
         <!-----------------content4---------------------->
+
         <div class="content4">
             <div class="banner">
                 <div class="item">
-                    <div class="pink">
-                        <div onclick="INTJ();" class="mask">
-                            <p>INTJ</p>
-                            <p>建築師</p>
+                    <div class="starSign">
+                        <div onclick="Jan();" class="mask">
+                            <p>摩羯座</p>
                         </div>
-                        <img src="./images/Story/sea.png" alt="">
+                        <img src="./images/Story/tiger.png" alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pink">
-                        <div onclick="INTP();" class="mask">
-                            <p>INTP</p>
-                            <p>邏輯學家</p>
-                        </div>
-                        <img src="./images/Story/redagate.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="green">
-                        <div onclick="INFJ();" class="mask">
-                            <p>INFJ</p>
-                            <p>提倡者</p>
+                    <div class="starSign">
+                        <div onclick="Feb();" class="mask">
+                            <p>水瓶座</p>
                         </div>
                         <img src="./images/Story/purple.png" alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="green">
-                        <div onclick="INFP();" class="mask">
-                            <p>INFP</p>
-                            <p>調停者</p>
-                        </div>
-                        <img src="./images/Story/yellow.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pink">
-                        <div onclick="ENTJ();" class="mask">
-                            <p>ENTJ</p>
-                            <p>指揮官</p>
-                        </div>
-                        <img src="./images/Story/moonstone.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pink">
-                        <div onclick="ENTP();" class="mask">
-                            <p>ENTP</p>
-                            <p>辯論家</p>
-                        </div>
-                        <img src="./images/Story/black.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="green">
-                        <div onclick="ENFJ();" class="mask">
-                            <p>ENFJ</p>
-                            <p>主人公</p>
-                        </div>
-                        <img src="./images/Story/smoky.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="green">
-                        <div onclick="ENFP();" class="mask">
-                            <p>ENFP</p>
-                            <p>競選者</p>
-                        </div>
-                        <img src="./images/Story/Labradorite.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="blue">
-                        <div onclick="ISTJ();" class="mask">
-                            <p>ISTJ</p>
-                            <p>調查員</p>
+                    <div class="starSign">
+                        <div onclick="Mar();" class="mask">
+                            <p>雙魚座</p>
                         </div>
                         <img src="./images/Story/pink.png" alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="blue">
-                        <div onclick="ISFJ();" class="mask">
-                            <p>ISFJ</p>
-                            <p>守護者</p>
+                    <div class="starSign">
+                        <div onclick="Apr();" class="mask">
+                            <p>牡羊座</p>
                         </div>
-                        <img src="./images/Story/grape.png" alt="">
+                        <img src="./images/Story/white.png" alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="yellow">
-                        <div onclick="ISTP();" class="mask">
-                            <p>ISTP</p>
-                            <p>鑑賞家</p>
+                    <div class="starSign">
+                        <div onclick="May();" class="mask">
+                            <p>金牛座</p>
                         </div>
-                        <img src="./images/Story/LapisLazuli.png" alt="">
+                        <img src="./images/Story/sea.png" alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="yellow">
-                        <div onclick="ISFP();" class="mask">
-                            <p>ISFP</p>
-                            <p>探險家</p>
+                    <div class="starSign">
+                        <div onclick="Jun();" class="mask">
+                            <p>雙子座</p>
+                        </div>
+                        <img src="./images/Story/yellow.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="starSign">
+                        <div onclick="Jul();" class="mask">
+                            <p>巨蟹座</p>
+                        </div>
+                        <img src="./images/Story/redagate.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="starSign">
+                        <div onclick="Aug();" class="mask">
+                            <p>獅子座</p>
                         </div>
                         <img src="./images/Story/rutilated.png" alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="blue">
-                        <div onclick="ESTJ();" class="mask">
-                            <p>ESTJ</p>
-                            <p>總經理</p>
-                        </div>
-                        <img src="./images/Story/tiger_blue.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="blue">
-                        <div onclick="ESFJ();" class="mask">
-                            <p>ESFJ</p>
-                            <p>執政官</p>
-                        </div>
-                        <img src="./images/Story/garnet.png" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="yellow">
-                        <div onclick="ESTP();" class="mask">
-                            <p>ESTP</p>
-                            <p>企業家</p>
+                    <div class="starSign">
+                        <div onclick="Sep();" class="mask">
+                            <p>處女座</p>
                         </div>
                         <img src="./images/Story/blueagate.png" alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="yellow">
-                        <div onclick="ESFP();" class="mask">
-                            <p>ESFP</p>
-                            <p>表演者</p>
+                    <div class="starSign">
+                        <div onclick="Oct();" class="mask">
+                            <p>天秤座</p>
                         </div>
-                        <img src="./images/Story/fluorite.png" alt="">
+                        <img src="./images/Story/garnet.png" alt="">
                     </div>
                 </div>
+                <div class="item">
+                    <div class="starSign">
+                        <div onclick="Nov();" class="mask">
+                            <p>天蠍座</p>
+                        </div>
+                        <img src="./images/Story/LapisLazuli.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="starSign">
+                        <div onclick="Dec();" class="mask">
+                            <p>射手座</p>
+                        </div>
+                        <img src="./images/Story/Labradorite.png" alt="">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
