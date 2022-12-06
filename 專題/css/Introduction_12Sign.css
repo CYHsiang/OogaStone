@@ -50,7 +50,6 @@ body {
     color: #21402F;
     text-decoration: none;
     line-height: 60px;
-    /* margin: 0 10px; */
 }
 
 .navLeft li:hover ul {
@@ -107,13 +106,6 @@ body {
     color: #21402F;
     display: inline-block;
 }
-
-/* .content1 a {
-    border: solid 1px red;
-    margin-right: 25px;
-    display: inline-block;
-    text-decoration: none;
-} */
 
 .content1 li {
     width: 200px;
@@ -206,7 +198,6 @@ body {
     color: #979E8A;
     font-size: 18px;
     margin-bottom: 30px;
-    /* line-height: 10px; */
     letter-spacing: 5px;
 }
 
@@ -222,7 +213,6 @@ body {
     position: absolute;
     bottom: 0px;
     left: 0;
-
 }
 
 .content2 img {
@@ -234,7 +224,6 @@ body {
     font-size: 28px;
     display: flex;
     justify-content: center;
-    /* margin: 60px 0; */
 }
 
 .content3 li {

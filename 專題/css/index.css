@@ -13,11 +13,9 @@ body {
     display: flex;
     padding: 0 70px;
     position: fixed;
-
-    top: -100px;
+    top: -100px;  
     opacity: 0;
     transition: all 0.3s;
-
     height: 60px;
 }
 
@@ -42,6 +40,7 @@ body {
     text-align: center;
 }
 
+/* header 第二層 */
 .navLeft ul ul {
     background-color: #FDF1E8;
     position: absolute;
@@ -63,7 +62,6 @@ body {
     display: block;
 }
 
-
 .navLeft a {
     position: relative;
 }
@@ -84,6 +82,7 @@ body {
     transform: scaleX(1);
 }
 
+/* header右邊 */
 .nav-right {
     margin-left: auto;
 }
@@ -301,7 +300,7 @@ body {
     padding-right: 20px;
 }
 
-.p1 {
+.banner2_Img {
     margin: 20px 50px;
     display: inline-block;
 }
@@ -335,16 +334,13 @@ body {
     background-image: url('../images/Index_start.svg');
     background-repeat: no-repeat;
     background-position: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 400;
-
 }
 
 .start a:hover {
@@ -416,7 +412,7 @@ body {
     color: #979E8A;
 }
 
-.p2 {
+.banner3_Img {
     margin-top: 80px;
 }
 
@@ -473,15 +469,14 @@ body {
 }
 
 .productItem a {
-   top: 0;
+    top: 0;
     width: 250px;
     height: 250px;
     display: block;
     position: absolute;
 }
 
-.item .mask
-{
+.item .mask {
     width: 250px;
     height: 250px;
     position: absolute;
@@ -495,23 +490,19 @@ body {
     top: 50px;
 }
 
-
 .item :hover {
-   opacity: 0;
+    opacity: 0;
 }
 
 .productItem:nth-child(odd) {
     margin-top: 70px;
 }
 
-
-
 /* ------------------footer----------------- */
 .footer {
     background-color: #979E8A;
     display: flex;
     padding: 0 70px;
-
 }
 
 .footer-logo {
@@ -523,13 +514,11 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
-
 }
 
 .footer-right ul {
     color: #FDF1E8;
     font-size: 18px;
-    /* font-weight: 400; */
     display: flex;
     align-items: center;
 }
@@ -537,7 +526,6 @@ body {
 .footer-right img {
     margin-left: 30px;
 }
-
 
 /* ----------------- 優惠券視窗 ------------------ */
 .overlay {
@@ -587,7 +575,6 @@ body {
     margin: 10px;
     color: #21402F;
     float: right;
-    /* cursor: pointer; */
 }
 
 .slider {
@@ -625,11 +612,3 @@ body {
     margin-top: 20px;
     margin-left: 30px;
 }
-
-/* 
-.popupText :nth-child(5) :active{
-    color: #21402F;
-  }
-.popupText :nth-child(5) :focus{
-    color: #979E8A;
-  } */

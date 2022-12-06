@@ -18,8 +18,6 @@ body {
     padding: 0 70px;
     position: fixed;
     top: 0;
-    flex: 1;
-
     height: 60px;
 }
 
@@ -39,6 +37,7 @@ body {
     text-align: center;
 }
 
+/* header 第二層 */
 .navLeft ul ul {
     background-color: #FDF1E8;
     position: absolute;

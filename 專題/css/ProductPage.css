@@ -4,7 +4,6 @@ body {
     font-family: 'Noto Serif TC', serif;
     display: flex; 
     flex-direction: column;
-    min-height: 100vh;
 }
 
 /* ------------------header----------------- */
@@ -25,7 +24,6 @@ body {
     padding: 15px 10px 0 0;
 }
 
-
 .navLeft li {
     float: left;
     list-style: none;
@@ -35,7 +33,6 @@ body {
     display: block;
     text-decoration: none;
     width: 100px;
-
     text-align: center;
 }
 
@@ -159,7 +156,7 @@ body {
     position: fixed;
     bottom: 70px;
     right: 70px;
-    /* z-index: 1; */
+    cursor:pointer;
 }
 
 /* ------------------footer----------------- */

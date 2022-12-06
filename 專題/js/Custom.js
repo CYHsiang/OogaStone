@@ -1,7 +1,6 @@
 //放大鏡功能
 /**
  * blowup.js
- * Paul Krishnamurthy 2016專題/js/Custom.js
  *
  * https://paulkr.com
  * paul@paulkr.com
@@ -24,17 +23,13 @@ $(function ($) {
 
         // Default attributes
         var defaults = {
-            // round: true,
             width: 200,
             height: 200,
-            // background: "#FFF",
-            // shadow: "0 5px 5px 0 rgba(0, 0, 0, 0.2)",
-            // border: "6px solid #FFF",
             cursor: true,
             zIndex: 999999,
             scale: 1,
-            // customClasses: ""
         }
+
         // Update defaults with custom attributes
         var $options = $.extend(defaults, attributes);
 
@@ -60,9 +55,6 @@ $(function ($) {
             "width": $options.width,
             "height": $options.height,
             "border": $options.border,
-            // "background": $options.background,
-            // "border-radius": $options.round ? "50%" : "none",
-            // "box-shadow": $options.shadow,
             "background-repeat": "no-repeat",
         });
 
@@ -111,6 +103,6 @@ $(function ($) {
 
 $(document).ready(function () {
     $('#blowup_image').blowup({
-        scale: 1.5
+        scale: 2
     });
 })

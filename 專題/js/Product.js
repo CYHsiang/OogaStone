@@ -8,7 +8,6 @@ function CloseModal() {
     element.style.display = 'none'
 }
 
-
 // 折價券輪播-----------
 $(".responsive").slick({
     dots: true,

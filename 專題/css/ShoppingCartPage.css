@@ -150,11 +150,6 @@ body {
     color: #21402F;
  }
 
-/* #down {
-    margin-bottom: 10px;
-    text-align: center;
-} */
-
 .value {
     text-align: center;
     width: 40px;
@@ -188,7 +183,6 @@ body {
     margin: 0 60px 0 100px;
     color: #21402F;
 }
-
 
 .total {
     display: flex;
@@ -244,7 +238,6 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
-
 }
 
 .footer-right ul {

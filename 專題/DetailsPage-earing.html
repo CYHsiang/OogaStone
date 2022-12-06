@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ooga Stone</title>
-    <link rel="shortcut icon" href="./images/favicon.ico"/>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/DetailsPage.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./js/jquery-3.6.0.js">
+    <script src="./js/Custom.js"></script>
 </head>
 
 <body>
@@ -32,7 +36,7 @@
                 </li>
                 <li><a href="#">活動消息</a>
                     <ul>
-                        <li onclick="OpenModal()"><a href="#">折價券</a></li>
+                        <li><a href="#">折價券</a></li>
                         <li><a href="#">限時折扣</a></li>
                     </ul>
                 </li>
@@ -63,7 +67,7 @@
                 <img src="./images/Product/21_4.jpg" alt="">
             </div>
             <div class="bigProduct">
-                <img src="./images/Product/21_3.jpg" alt="">
+                <img src="./images/Product/21_3.jpg" id="blowup_image">
             </div>
             <div class="text">
                 <h1>娜芙蒂蒂｜白水晶 耳環</h1>
@@ -92,10 +96,14 @@
                 </div>
                 <div class="addShop">
                     <div class="add">
-                        <a href="#"><h2>加入購物車</h2></a>
+                        <a href="#">
+                            <h2>加入購物車</h2>
+                        </a>
                     </div>
                     <div class="shop">
-                        <a href="#"><h2>直接購買</h2></a>
+                        <a href="#">
+                            <h2>直接購買</h2>
+                        </a>
                     </div>
                 </div>
             </div>
