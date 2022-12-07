@@ -2,7 +2,6 @@ body {
     margin: 0;
     background: #FDF1E8;
     font-family: 'Noto Serif TC', serif;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -124,7 +123,6 @@ body {
     width: 370px;
     height: 581px;
     color: #21402F;
-    /* border: 1px solid red; */
 }
 
 .text hr {
@@ -175,16 +173,14 @@ hr {
     margin: auto;
 }
 
-.AddSub {
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.AddSub img {
-    padding: 5px 0;
-    height: 13px;
-    width: 13px;
+.AddSub input {
+    background-color: #FDF1E8;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    width: 30px;
+    color: #21402F;
+    font-family: 'Noto Serif TC', serif;
 }
 
 .addShop {

@@ -24,11 +24,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 
-
-    <link rel="stylesheet" href="./js/jquery-3.6.0.js">
-    <script src="./js/Custom.js"></script>
-
     <link rel="stylesheet" href="./css/CustomPage.css">
+    <script src="./js/Custom.js"></script>
 
 </head>
 <script>
@@ -104,7 +101,7 @@
             </div>
         </div>
         <div class="content2">
-            <div class="shape">
+            <div class="shape" data-id="1">
                 <img id="long" src="./images/Custom_long_white.png">
                 <div class="shapeTxt">
                     <h2>長鏈</h2>
@@ -126,7 +123,7 @@
 
         <hr color=#979E8A size=1 align=center width=90%>
 
-        <div class="crystal">
+        <div class="crystal" id="area1">
             <div class="title2">
                 <ul>
                     <li>1.選擇款式</li>
@@ -341,17 +338,21 @@
                 <div class="quantity">
                     <p>數量</p>
                     <div class="AddSub">
-                        <img src="./images/Subsmall.svg" alt="">
-                        <p>1</p>
-                        <img src="./images/Addsmall.svg" alt="">
+                        <img src="./images/Subsmall.svg" id="down" onclick="down('0')">
+                        <input type="text" id="myNumber" class="value" value="1" />
+                        <img src="./images/Addsmall.svg" id="up" onclick="up('10')">
                     </div>
                 </div>
                 <div class="addShop">
                     <div class="add">
-                        <p>加入購物車</p>
+                        <a href="#">
+                            <p>加入購物車</p>
+                        </a>
                     </div>
                     <div class="shop">
-                        <p>直接購買</p>
+                        <a href="#">
+                            <p>直接購買</p>
+                        </a>
                     </div>
                 </div>
             </div>

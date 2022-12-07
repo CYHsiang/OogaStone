@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="./css/DetailsPage.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    
-    <link rel="stylesheet" href="./js/jquery-3.6.0.js">
-    <script src="./js/Custom.js"></script>
 
+    <link rel="stylesheet" href="./js/jquery-3.6.0.js">
+    <script src="./js/Detail.js"></script>
 </head>
 
 <body>
@@ -38,7 +37,7 @@
                 </li>
                 <li><a href="#">活動消息</a>
                     <ul>
-                        <li onclick="OpenModal()"><a href="#">折價券</a></li>
+                        <li><a href="#">折價券</a></li>
                         <li><a href="#">限時折扣</a></li>
                     </ul>
                 </li>
@@ -64,12 +63,15 @@
     <div class="container">
         <div class="Product">
             <div class="smallProduct">
-                <img src="./images/Product/necklace/1_1.jpg" alt="">
-                <img class="p2" src="./images/Product/necklace/1_4.jpg" alt="">
-                <img src="./images/Product/necklace/1_3.jpg" alt="">
+                <img src="./images/Product/necklace/1_1.jpg"
+                    onmouseover="MM_swapImage('blowup_image','','images/Product/necklace/1_1.jpg',1)">
+                <img class="p2" src="./images/Product/necklace/1_4.jpg"
+                    onmouseover="MM_swapImage('blowup_image','','images/Product/necklace/1_4.jpg',1)">
+                <img src="./images/Product/necklace/1_3.jpg"
+                    onmouseover="MM_swapImage('blowup_image','','images/Product/necklace/1_3.jpg',1)">
             </div>
             <div class="bigProduct">
-                <img src="./images/Product/necklace/1_2.jpg" id="blowup_image">
+                <img src="./images/Product/necklace/1_1.jpg" id="blowup_image">
             </div>
             <div class="text">
                 <h1>原礦｜白水晶 項鍊</h1>
@@ -91,9 +93,9 @@
                 <div class="quantity">
                     <p>數量</p>
                     <div class="AddSub">
-                        <img src="./images/Subsmall.svg" alt="">
-                        <p>1</p>
-                        <img src="./images/Addsmall.svg" alt="">
+                        <img src="./images/Subsmall.svg" id="down" onclick="down('0')">
+                        <input type="text" id="myNumber" class="value" value="1" />
+                        <img src="./images/Addsmall.svg" id="up" onclick="up('10')">
                     </div>
                 </div>
                 <div class="addShop">

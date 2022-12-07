@@ -330,7 +330,6 @@ hr {
 .material,
 .stone,
 .addShop {
-    width: 370px;
     display: flex;
     justify-content: space-between;
 }
@@ -341,42 +340,63 @@ hr {
     margin: auto;
 }
 
-.AddSub {
-    width: 110px;
-    display: flex;
-    justify-content: space-around;
+.AddSub img{
+    padding-bottom: 5px;
 }
 
-.AddSub img {
-    padding: 10px 0 0 0;
-    height: 22px;
+.AddSub input{
+    background-color: #FDF1E8;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    width: 30px;
+    color: #21402F;
 }
 
 .addShop {
-    margin: auto;
     margin-top: 40px;
 }
 
 .add,
 .shop {
-    box-sizing: content-box;
-    font-size: 16px;
     width: 175px;
     height: 50px;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
 }
 
 .add {
     border: solid 2px #21402F;
 }
 
+.add a {
+    text-decoration: none;
+    color: #21402F;
+}
+
 .shop {
-    color: #fff;
     border: solid 2px #21402F;
     background-color: #21402F;
 }
 
+.shop a {
+    text-decoration: none;
+    color: #FDF1E8;
+}
+
+.add:hover {
+    border: solid 2px #979E8A;
+    background-color: #979E8A;
+}
+
+.add a:hover {
+    color: #FDF1E8;
+}
+
+.shop:hover {
+    border: solid 2px #979E8A;
+    background-color: #979E8A;
+}
 
 /* ------------------footer----------------- */
 .footer {
