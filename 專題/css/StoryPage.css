@@ -2,7 +2,6 @@ body {
     margin: 0;
     background: #FDF1E8;
     font-family: 'Noto Serif TC', serif;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -26,18 +25,6 @@ body {
     padding: 15px 10px 0 0;
 }
 
-/* .navLeft{
-    height: 60px;
-    border: 1px solid red;
-    overflow: hidden;
-    width: 480px;
-    margin: 0 auto;
-} */
-/* .navLeft ul {
-    margin: 0;
-    padding: 0;
-} */
-
 .navLeft li {
     float: left;
     list-style: none;
@@ -47,7 +34,6 @@ body {
     display: block;
     text-decoration: none;
     width: 100px;
-    /* height: 40px; */
     text-align: center;
 }
 
@@ -58,10 +44,6 @@ body {
     box-shadow: 0px 10px 13px -7px #959595;
 }
 
-/* .navLeft li li:hover {
-    background-color:#979E8A;
-} */
-
 .navLeft li li {
     clear: left;
 }
@@ -70,7 +52,6 @@ body {
     color: #21402F;
     text-decoration: none;
     line-height: 60px;
-    /* margin: 0 10px; */
 }
 
 .navLeft li:hover ul {
@@ -105,6 +86,7 @@ body {
     margin-top: 15px;
     margin-right: 30px;
 }
+
 /* ------------------content---------------- */
 .container {
     margin: 0 auto;
@@ -132,12 +114,12 @@ body {
     margin: auto;
 }
 
-.title{
+.title {
     width: 200px;
     margin: auto;
 }
 
-.title img{
+.title img {
     float: left;
 }
 
@@ -169,7 +151,7 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-.btnShop:hover{
+.btnShop:hover {
     background-color: #979E8A;
     border: solid 1px #979E8A;
 }

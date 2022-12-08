@@ -288,7 +288,7 @@ body {
 }
 
 .mask {
-    width: 270px;
+    width: 250px;
     height: 270px;
     position: absolute;
     text-align: center;
@@ -296,6 +296,8 @@ body {
     line-height: 270px;
     color: white;
     background-color: rgba(0, 0, 0, 0.31);
+    backdrop-filter: blur(5px);
+    box-sizing:content-box;
 }
 
 /* ------------------footer----------------- */
@@ -326,100 +328,3 @@ body {
 .footer-right img {
     margin-left: 30px;
 }
-
-
-/* ----------------- 優惠券視窗 ------------------ */
-.overlay {
-    position: absolute;
-    display: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    position: fixed;
-    width: 100%;
-}
-
-.popup {
-    position: absolute;
-    width: 60%;
-    height: 60%;
-    top: 20%;
-    left: 20%;
-    text-align: center;
-    background-color: #FDF1E8;
-}
-
-
-.popupTitle {
-    margin: 50px;
-    display: flex;
-}
-
-.popup h3 {
-    margin-left: 40px;
-    width: 160px;
-    line-height: 40px;
-    color: #21402F;
-    background-image: url(../images/popup_line.svg);
-}
-
-.popupTitle :nth-child(2) {
-    background-repeat: no-repeat;
-    border: #21402F;
-    color: #FDF1E8;
-    background-image: url(../images/popup_line_tiltle.svg);
-}
-
-.CloseIcon {
-    margin: 10px;
-    color: #21402F;
-    float: right;
-    /* cursor: pointer; */
-}
-
-.slider {
-    margin: 50px;
-}
-
-.popupText {
-    margin-left: 25px;
-    margin-top: 40px;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.59);
-    width: 200px;
-    height: 200px;
-}
-
-.popupText p {
-    color: #21402F;
-    line-height: 40px;
-}
-
-.popupText :nth-child(2) {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.popupText :nth-child(3) {
-    padding-left: 60px;
-}
-
-.popupText :nth-child(5) {
-    width: 150px;
-    color: #FDF1E8;
-    background-image: url(../images/popup_line\ full.svg);
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-
-/* 
-.popupText :nth-child(5) :active{
-    color: #21402F;
-  }
-.popupText :nth-child(5) :focus{
-    color: #979E8A;
-  } */

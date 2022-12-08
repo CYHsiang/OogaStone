@@ -23,7 +23,6 @@
             // 捲動到最上面的位置（scrollTop:0）
             $('html,body').animate({ scrollTop: '0' }, 500);
         });
-
         // 產生按鈕的時機（截入、捲動、視窗大小）
         $(window).on('load scroll resize', function () {
             // 檢查目前捲軸捲動的高度值有沒有超100，如果有，就出現TOP按鈕
@@ -58,7 +57,7 @@
                 </li>
                 <li><a href="#">活動消息</a>
                     <ul>
-                        <li onclick="OpenModal()"><a href="#">折價券</a></li>
+                        <li><a href="#">折價券</a></li>
                         <li><a href="#">限時折扣</a></li>
                     </ul>
                 </li>
