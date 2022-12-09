@@ -2,6 +2,9 @@ body {
     margin: 0;
     background: #FDF1E8;
     font-family: 'Noto Serif TC', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* ------------------header----------------- */
@@ -15,6 +18,7 @@ body {
     position: fixed;
     top: 0;
     height: 60px;
+    flex: 1;
 }
 
 .logo-small {
@@ -88,6 +92,7 @@ body {
     margin: 60px auto 0;
     width: 1440px;
     height: 775px;
+    flex: 1;
 }
 
 .content {
@@ -148,6 +153,7 @@ body {
     width: 40px;
     background-color: #FDF1E8;
     border: #FDF1E8;
+    font-family: 'Noto Serif TC', serif;
 }
 
 /*金額-----------------*/

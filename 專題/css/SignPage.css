@@ -295,9 +295,8 @@ body {
     font-size: 36px;
     line-height: 270px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.31);
+    background-color: rgba(0, 0, 0, 0.30);
     backdrop-filter: blur(5px);
-    box-sizing:content-box;
 }
 
 /* ------------------footer----------------- */
